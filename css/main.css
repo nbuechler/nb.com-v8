@@ -1,0 +1,145 @@
+
+/* Windows Phone IE Hack*/
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+  background: black;
+}
+footer {
+  padding: 30px 0;
+}
+
+.mainBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_index.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.artistBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_artist.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.socialBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_social.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.programmingBKGD{
+  border: 1px solid white;
+  background:url(../images/bkgd/bkgd_v2_programmer.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  }
+
+.scienceBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_science.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+.engineeringBKGD{
+  border: 1px solid white;
+	background:url(../images/bkgd/bkgd_v2_engineer.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+#content{
+  z-index:  0;
+	}
+
+.container {
+	font-family: 'Lato', sans-serif;
+	}
+
+h1{
+	font-family: 'Lato', sans-serif;
+	}
+
+h2{
+	font-family: 'Lato', sans-serif;
+	color: white;
+	}
+
+p{
+	font-family: 'Lato', sans-serif;
+	color: white;
+	}
+
+#roleBar{
+	padding-top: 56px;
+	bottom: 48px;
+	}
+
+.roleIcon{
+	width: 87px;
+	margin: 20px;
+	}
+
+.roleIcon:hover{
+	opacity: .3;
+	}
+
+.hextopshift{
+	margin-bottom: -78px;
+	text-align: center;
+	}
+
+.hexrightshift{
+	margin-left: 0px;
+	}
+
+.hexleftshift{
+	margin-right: 0px;
+	}
+
+.hexshift-1{
+	position: relative;
+	margin-top: 0px;
+	}
+.hexshift-2{
+	position: relative;
+	margin-top: 77px;
+	}
+.hexshift-3{
+	position: relative;
+	margin-top: 155px;
+	}
+.hexshift-4{
+	position: relative;
+	margin-top: 233px;
+	}
+.hexshift-5{
+	position: relative;
+	margin-top: 311px;
+	}
+.hexshift-6{
+	position: relative;
+	margin-top: 389px;
+	}
+.hexshift-7{
+	position: relative;
+	margin-top: 467px;
+	}
