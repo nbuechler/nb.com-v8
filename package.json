@@ -1,0 +1,25 @@
+{
+  "name": "nb.com",
+  "version": "8.1.0",
+  "description": "nathanielbuechler.com website",
+  "author": "Nathaniel Buechler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nbuechler/nb.com-v8/issues"
+  },
+  "homepage": "https://github.com/nbuechler/nb.com-v8#readme",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbuechler/nb.com-v8.git"
+  },
+  "keywords": [
+    "angular",
+    "d3"
+  ],
+  "dependencies": {
+    "bower": "~1.3.8"
+  }
+}
