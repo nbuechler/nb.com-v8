@@ -24,9 +24,16 @@ footer {
   padding: 30px 0;
 }
 
+.indexBKGD{
+  /*border: 1px solid white;*/
+	background:url(../images/bkgd/bkgd_v2_index.gif);
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
 .mainBKGD{
   border: 1px solid white;
-	background:url(../images/bkgd/bkgd_v2_index.jpg);
+	background:url(../images/bkgd/bkgd_v2_index.gif);
 	background-repeat: no-repeat;
 	background-color: black;
 	}
