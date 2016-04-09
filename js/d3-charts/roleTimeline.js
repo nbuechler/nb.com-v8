@@ -41,8 +41,8 @@ var roleData = [
 ]
 
 
-var margin = {top: 60, right: 50, bottom: 30, left: 60},
-    width = 840 - margin.left - margin.right,
+var margin = {top: 60, right: 40, bottom: 30, left: 50},
+    width = 780 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 var x = d3.scale.linear()
@@ -65,25 +65,6 @@ var yAxis = d3.svg.axis()
 	.ticks(0)
 	.tickFormat(function(d,i) { return ("Role " + parseInt(i + 1)); });
 
-var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset(function(d, i) { return [30, x(parseInt(d.endDate))/1.5 - d3.select(".mCSB_container").width] ; })
-  .html(function(d) {
-	  if(d.startDate != currentYear - 1){
-	  return "<span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2>" ;
-	  }
-	  else{
-	  return "<span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2>" ;
-	  }
-  });
-
-var tipSun = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset(function(d, i) { return [0, -40] ; })
-  .html(function(d) {
-	  return "<span>" + d.name + "  </h2>" ;
-  });
-
 var svg = d3.select("#roleChart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -91,7 +72,6 @@ var svg = d3.select("#roleChart").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-  svg.call(tip);
 
   svg.append("g")
       .attr("class", "x axis")
@@ -130,8 +110,26 @@ var svg = d3.select("#roleChart").append("svg")
 	  .on("mouseenter", function(d) {
 		  d3.select(this).attr("fill", "darkGray");
 		  })
-	  .on("mouseover", tip.show)
-	  .on("click", tip.show)
+	  .on("mouseover", function(d) {
+		  d3.select("#roleFocus").html(function() {
+				  if(d.startDate != currentYear - 1){
+				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
+				  }
+				  else{
+				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
+				  }
+				});
+			})
+	  .on("click", function(d) {
+		  d3.select("#roleFocus").html(function() {
+				  if(d.startDate != currentYear - 1){
+				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
+				  }
+				  else{
+				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
+				  }
+				});
+			})
 	  .on("mouseleave", function(d) {
 		  d3.select(this).attr("fill", d.color)
 		  })
