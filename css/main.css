@@ -100,6 +100,10 @@ p{
 	bottom: 48px;
 	}
 
+.canvasHolderBkgd{
+	background-color: #D3D3D3
+	}
+
 .roleIcon{
 	width: 87px;
 	margin: 20px;
