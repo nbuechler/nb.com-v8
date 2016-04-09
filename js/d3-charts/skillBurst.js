@@ -1,5 +1,5 @@
 var root = {
-	"name": "Nathaniel Buechler",
+	"name": "Multifaceted Specialist",
 	"color": "silver",
 		"children": [
 			{
@@ -355,8 +355,8 @@ var root = {
 
 
 
-var sunWidth = 840,
-    sunHeight = 370,
+var sunWidth = 780,
+    sunHeight = 390,
     radius = Math.min(sunWidth, sunHeight) / 2;
 
 var x = d3.scale.linear()
@@ -381,8 +381,6 @@ var arc = d3.svg.arc()
     .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
     .innerRadius(function(d) { return Math.max(0, y(d.y)); })
     .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
-
-  svg.call(tipSun);
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root))
@@ -410,7 +408,12 @@ var arc = d3.svg.arc()
 	  .on("mouseenter", function(d) {
 		  d3.select(this).style("fill", "darkGray");
 		  })
-	  .on("mouseover", tipSun.show)
+	  .on("mouseover", function(d) {
+		  d3.select("#skillFocus").html(function() {
+				  return "<div style='margin-top: 80px'><span><img height='150' src='images/default-hex.png' alt='Nathaniel' /></span><br><h6 class='well'>" + d.name + "</h6></div>" ;
+				});
+			})
+			// <
 	  .on("mouseleave", function(d) {
 		  d3.select(this)
 		  .style("fill", function(d) {
@@ -433,7 +436,7 @@ var arc = d3.svg.arc()
 	  .transition().duration(400)
 	  .style("opacity", 0)
 	  .style("font-size", "0px");
-	  if(d.name == "Nathaniel Buechler"){
+	  if(d.name == "Multifaceted Specialist"){
 	  	d3.selectAll(".centerText")
 		.style("display", "")
 		.transition().duration(400)
@@ -484,7 +487,7 @@ svg.append("text")
 svg.append("text")
 		.attr("class", "centerText")
         .attr("x", -(width / 3))
-        .attr("y", 10 - (margin.top / margin.top))
+        .attr("y", 150 - (margin.top / margin.top))
         .attr("text-anchor", "middle")
         .style("font-size", "13px")
         .text("I've explored a few subjects.");
@@ -492,7 +495,7 @@ svg.append("text")
 svg.append("text")
 		.attr("class", "centerText")
         .attr("x", -(width / 3))
-        .attr("y", 30 - (margin.top / margin.top))
+        .attr("y", 170 - (margin.top / margin.top))
         .attr("text-anchor", "middle")
         .style("font-size", "13px")
         .text("(Click an area to zoom)");
