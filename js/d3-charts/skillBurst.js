@@ -129,13 +129,15 @@ var root = {
 						{"name": "angular.js", "years": 1, "size": 1},
 						{"name": "express.js", "years": 1, "size": 1},
 						{"name": "ember.js", "years": 1, "size": 1},
+						{"name": "node.js", "years": 1, "size": 1},
+						{"name": "MEAN.js", "years": 1, "size": 1},
 						{"name": "moustache.js", "years": 1, "size": 1},
 						{"name": "handlebars.js", "years": 1, "size": 1},
 						{"name": "meteor.js", "years": 1, "size": 1},
-						{"name": "node.js", "years": 1, "size": 1},
-						{"name": "MEAN.js", "years": 1, "size": 1},
 						{"name": "Grunt", "years": 1, "size": 1},
-						{"name": "Bower", "years": 1, "size": 1}
+						{"name": "react.js", "years": 1, "size": 1},
+						{"name": "flux", "years": 1, "size": 1},
+						{"name": "redux", "years": 1, "size": 1}
 					]},
 					{
 					"name": "jQuery",
