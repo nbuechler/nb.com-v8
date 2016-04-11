@@ -8,7 +8,14 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
         .state('home', {
             url: '/home',
-            templateUrl: '../views/home.html'
+            views: {
+                '': { templateUrl: '../views/home.html' },
+                'artist@home': { templateUrl: '../views/artist.html' },
+                'social-scientist@home': { templateUrl: '../views/social-scientist.html' },
+                'computer-programmer@home': { templateUrl: '../views/computer-programmer.html' },
+                'natural-scientist@home': { templateUrl: '../views/natural-scientist.html' },
+                'engineer@home': { templateUrl: '../views/engineer.html' },
+            }
         })
 
         .state('artist', {
