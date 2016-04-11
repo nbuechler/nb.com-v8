@@ -9,4 +9,5 @@ bower install
 
 # run the app locally
 python -m SimpleHTTPServer
+
 Now, go to localhost:8000 in your browser and the page will show
