@@ -18,6 +18,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
+        /*
+        Artist Section
+        */
         .state('artist', {
             url: '/artist',
             views: {
@@ -25,6 +28,40 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 'intro@artist': { templateUrl: '../views/intros/artist-intro.html' },
             }
         })
+        .state('musician', {
+            url: '/musician',
+            views: {
+                '': { templateUrl: '../views/musician.html' },
+            }
+        })
+        .state('painter', {
+            url: '/painter',
+            views: {
+                '': { templateUrl: '../views/painter.html' },
+            }
+        })
+        .state('photographer', {
+            url: '/photographer',
+            views: {
+                '': { templateUrl: '../views/photographer.html' },
+            }
+        })
+        .state('graphic-designer', {
+            url: '/graphic-designer',
+            views: {
+                '': { templateUrl: '../views/graphic-designer.html' },
+            }
+        })
+        .state('sound-designer', {
+            url: '/sound-designer',
+            views: {
+                '': { templateUrl: '../views/sound-designer.html' },
+            }
+        })
+
+        /*
+        Social Scientist Section
+        */
         .state('social-scientist', {
             url: '/social-scientist',
             views: {
@@ -32,6 +69,46 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 'intro@social-scientist': { templateUrl: '../views/intros/social-scientist-intro.html' },
             }
         })
+        .state('journalist', {
+            url: '/journalist',
+            views: {
+                '': { templateUrl: '../views/journalist.html' },
+            }
+        })
+        .state('world-historian', {
+            url: '/world-historian',
+            views: {
+                '': { templateUrl: '../views/world-historian.html' },
+            }
+        })
+        .state('political-economist', {
+            url: '/political-economist',
+            views: {
+                '': { templateUrl: '../views/political-economist.html' },
+            }
+        })
+        .state('social-activist', {
+            url: '/social-activist',
+            views: {
+                '': { templateUrl: '../views/social-activist.html' },
+            }
+        })
+        .state('comparative-institutionalist', {
+            url: '/comparative-institutionalist',
+            views: {
+                '': { templateUrl: '../views/comparative-institutionalist.html' },
+            }
+        })
+        .state('cultural-anthropologist', {
+            url: '/cultural-anthropologist',
+            views: {
+                '': { templateUrl: '../views/cultural-anthropologist.html' },
+            }
+        })
+
+        /*
+        Computer Programmer Section
+        */
         .state('computer-programmer', {
             url: '/computer-programmer',
             views: {
@@ -39,6 +116,22 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 'intro@computer-programmer': { templateUrl: '../views/intros/computer-programmer-intro.html' },
             }
         })
+        .state('back-end-developer', {
+            url: '/back-end-developer',
+            views: {
+                '': { templateUrl: '../views/back-end-developer.html' },
+            }
+        })
+        .state('front-end-developer', {
+            url: '/front-end-developer',
+            views: {
+                '': { templateUrl: '../views/front-end-developer.html' },
+            }
+        })
+
+        /*
+        Natural Scientist Section
+        */
         .state('natural-scientist', {
             url: '/natural-scientist',
             views: {
@@ -46,6 +139,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 'intro@natural-scientist': { templateUrl: '../views/intros/natural-scientist-intro.html' },
             }
         })
+
+        /*
+        Engineer Section
+        */
         .state('engineer', {
             url: '/engineer',
             views: {
