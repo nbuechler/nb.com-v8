@@ -2,41 +2,41 @@ var earlyYear = 1996;
 var currentYear = new Date().getFullYear();
 
 var roleData = [
-		{"name" : "Artist", "startDate": 1996,
+		{"name" : "Artist", "startDate": 1996, "url": "artist",
 		"endDate" : currentYear, "color": "#56222E", "fileName" : "src='images/web-rdy_icons/artist.jpg'"},
-		{"name" : "Musician", "startDate": "2000",
+		{"name" : "Musician", "startDate": "2000", "url": "musician",
 		"endDate" : currentYear, "color": "#3B2F23", "fileName" : "src='images/web-rdy_icons/musician.jpg'"},
-		{"name" : "Painter", "startDate": "2005",
+		{"name" : "Painter", "startDate": "2005", "url": "painter",
 		"endDate" : currentYear, "color": "#6C3433", "fileName" : "src='images/web-rdy_icons/painter.jpg'"},
-		{"name" : "Photographer", "startDate": "2008",
+		{"name" : "Photographer", "startDate": "2008", "url": "photographer",
 		"endDate" : currentYear, "color": "#824648", "fileName" : "src='images/web-rdy_icons/photographer.jpg'"},
-		{"name" : "Graphic Designer", "startDate": "2009",
+		{"name" : "Graphic Designer", "startDate": "2009", "url": "graphic-designer",
 		"endDate" : currentYear, "color": "#4D0036", "fileName" : "src='images/web-rdy_icons/graphic-designer.jpg'"},
-		{"name" : "Journalist", "startDate": "2009",
+		{"name" : "Journalist", "startDate": "2009", "url": "journalist",
 		"endDate" : currentYear, "color": "#412F6B", "fileName" : "src='images/web-rdy_icons/journalist.jpg'"},
-		{"name" : "Social Activist", "startDate": "2009",
+		{"name" : "Social Activist", "startDate": "2009", "url": "social-activist",
 		"endDate" : currentYear, "color": "#44336A", "fileName" : "src='images/web-rdy_icons/social-activist.jpg'"},
-		{"name" : "Social Scientist", "startDate": "2010",
+		{"name" : "Social Scientist", "startDate": "2010", "url": "social-scientist",
 		"endDate" : currentYear, "color": "#262561", "fileName" : "src='images/web-rdy_icons/social-scientist.jpg'"},
-		{"name" : "Political Economist", "startDate": "2010",
+		{"name" : "Political Economist", "startDate": "2010", "url": "political-economist",
 		"endDate" : currentYear, "color": "#0C0B11", "fileName" : "src='images/web-rdy_icons/political-economist.jpg'"},
-		{"name" : "Comparative Institutionalist", "startDate": "2010",
+		{"name" : "Comparative Institutionalist", "startDate": "2010", "url": "comparative-institutionalist",
 		"endDate" : currentYear, "color": "#3C5F7D", "fileName" : "src='images/web-rdy_icons/comparative-institutionalist.jpg'"},
-		{"name" : "World Historian", "startDate": "2010",
+		{"name" : "World Historian", "startDate": "2010", "url": "world-historian",
 		"endDate" : currentYear, "color": "#181737", "fileName" : "src='images/web-rdy_icons/world-historian.jpg'"},
-		{"name" : "Computer Programmer", "startDate": "2010",
+		{"name" : "Computer Programmer", "startDate": "2010", "url": "computer-programmer",
 		"endDate" : currentYear, "color": "#632F5F", "fileName" : "src='images/web-rdy_icons/computer-programmer.jpg'"},
-		{"name" : "Cultural Anthropologist", "startDate": "2010",
+		{"name" : "Cultural Anthropologist", "startDate": "2010", "url": "cultural-anthropologist",
 		"endDate" : currentYear, "color": "#171449", "fileName" : "src='images/web-rdy_icons/cultural-anthropologist.jpg'"},
-		{"name" : "Sound Designer", "startDate": "2011",
+		{"name" : "Sound Designer", "startDate": "2011", "url": "sound-designer",
 		"endDate" : currentYear, "color": "#7F406B", "fileName" : "src='images/web-rdy_icons/sound-designer.jpg'"},
-		{"name" : "Natural Scientist", "startDate": "2012",
+		{"name" : "Natural Scientist", "startDate": "2012", "url": "natural-scientist",
 		"endDate" : currentYear, "color": "#296A52", "fileName" : "src='images/web-rdy_icons/natural-scientist.jpg'"},
-		{"name" : "Engineer", "startDate": "2012",
+		{"name" : "Engineer", "startDate": "2012", "url": "engineer",
 		"endDate" : currentYear, "color": "#775923", "fileName" : "src='images/web-rdy_icons/engineer.jpg'"},
-		{"name" : "Back-end Developer", "startDate": "2013",
+		{"name" : "Back-end Developer", "startDate": "2013", "url": "back-end-developer",
 		"endDate" : currentYear, "color": "#767281", "fileName" : "src='images/web-rdy_icons/back-end-developer.jpg'"},
-		{"name" : "Front-end Developer", "startDate": "2013",
+		{"name" : "Front-end Developer", "startDate": "2013", "url": "front-end-developer",
 		"endDate" : currentYear, "color": "#31252F", "fileName" : "src='images/web-rdy_icons/front-end-developer.jpg'"}
 ]
 
@@ -113,20 +113,20 @@ var svg = d3.select("#roleChart").append("svg")
 	  .on("mouseover", function(d) {
 		  d3.select("#roleFocus").html(function() {
 				  if(d.startDate != currentYear - 1){
-				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
 				  }
 				  else{
-				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
 				  }
 				});
 			})
 	  .on("click", function(d) {
 		  d3.select("#roleFocus").html(function() {
 				  if(d.startDate != currentYear - 1){
-				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
 				  }
 				  else{
-				  return "<div style='margin-top: 70px'><span><img " + d.fileName + "/></span><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
 				  }
 				});
 			})
