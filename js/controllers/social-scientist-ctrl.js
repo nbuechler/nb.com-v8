@@ -20,7 +20,7 @@ routerApp.controller('socialController', ['$scope', '$http',
         "description": "China faces decline brought upon by decreased economic domestic growth, the result of international circumstance, ultimately leading to resurgence of labor unrest and the dispute of power in China; this thereby causes Chinese social upheaval in the form of internal conflict and divisions between the Chinese Communist Party (CCP) and the People’s Liberation Army (PLA). A gradually worsening domestic condition, the growing strife and burden put on the 150 million lower class rural citizens has continued to build and accelerates due to the impact of the domestic economy..."
         },
         {
-        "id": 3, "name": "Germany in 2013: A Special Case for an Unpredictable Future", "filepath": rootPath + "A Special Case for an Unpredictable Future",
+        "id": 3, "name": "Germany in 2013: A Special Case for an Unpredictable Future", "filepath": rootPath + "Germany in 2013.pdf",
         "description": "In today's contemporary setting, Germany portrays the status of an economic example for efficiency. “Germany has long been Europe's strongest economic power; it has a gross domestic product of about $3.1 trillion – the fifth largest in the world...” and represents one of the most influential states in Europe. With a highly trained populous, and the ability to develop and manufacture some of most modern technologies, medical advancements, and global products, “[t]he country's leading role does not always sit well with its citizens, who have protested calls from eurozone finance ministers for Germany to increase bailout funds for countries such as Italy, Spain and Greece.”..."
         },
       ];
