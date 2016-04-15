@@ -1,42 +1,5 @@
 <div ui-view="intro"></div>
 
-<!-- TODO Build an interface that better manages articles, maybe even with filtering-->
-
-<!--X-->
-<div class="row" ng-controller="socialController">
-  <div class="container">
-    <div class="col-xs-12">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Social Scientist Projects</div>
-        <div class="panel-footer">
-          <div class="row">
-            <div class="col-lg-3">
-              <ul class="list-group">
-                <a style="cursor: pointer;" class="list-group-item"
-                   ng-repeat="project in socialScienceProjects"
-                   ng-click="selectProject(project)">
-                   {{project.name}}
-                 </a>
-              </ul>
-            </div>
-            <div class="col-lg-9">
-              <div class="well" style="height: 600px;">
-                <div style="text-align: center;"
-                    ng-show="selectedProject == null">
-                    {{default}}
-                </div>
-                <div ng-show="selectedProject != null">
-                  {{selectedProject.name}}
-                  <hr></hr>
-                  <h6>{{selectedProject.description}}<h6>
-                  <hr></hr>
-                  <a class="btn btn-md btn-default pull-right" ng-href="{{selectedProject.filepath}}" style="color: white;">Download <i class="fa fa-download" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="row" ng-controller="socialScientistController">
+  <article-container-directive></article-container-directive>
 </div>

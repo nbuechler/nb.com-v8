@@ -1,8 +1,9 @@
 // NOTE: routerApp is defined in app.js
-routerApp.controller('socialController', ['$scope', '$http',
+routerApp.controller('socialScientistController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Projects are listed on the left. Select one to read more about the topic.';
       $scope.selectedProject = null;
+      $scope.title = 'Social Scientist Projects';
 
       var rootPath = '../content/roles/socialScientist/';
       // {"id": 0, name": "", "filepath": "", "description": ""},
@@ -25,7 +26,7 @@ routerApp.controller('socialController', ['$scope', '$http',
         },
       ];
 
-      $scope.socialScienceProjects = socialScienceProjects;
+      $scope.projects = socialScienceProjects;
 
       $scope.selectProject = function(project) {
           $scope.selectedProject = project;
