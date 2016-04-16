@@ -111,9 +111,18 @@ p{
 	margin: 20px;
 	}
 
+.roleIcon-sm{
+	width: 58px;
+	margin: 1px;
+	}
+
 .roleIcon:hover{
 	opacity: .3;
-	}
+}
+
+.roleIcon-sm:hover{
+	opacity: .3;
+}
 
 .hextopshift{
 	margin-bottom: -78px;
