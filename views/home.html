@@ -121,11 +121,13 @@
   </div>
 </div>
 
-<div ui-view="artist"></div>
-<div ui-view="social-scientist"></div>
-<div ui-view="computer-programmer"></div>
-<div ui-view="natural-scientist"></div>
-<div ui-view="engineer"></div>
+<div ng-controller="homeController">
+  <div ui-view="artist"></div>
+  <div ui-view="social-scientist"></div>
+  <div ui-view="computer-programmer"></div>
+  <div ui-view="natural-scientist"></div>
+  <div ui-view="engineer"></div>
+</div>
 
 <div class="row jumbotron mainBKGD">
   <div class="container">
