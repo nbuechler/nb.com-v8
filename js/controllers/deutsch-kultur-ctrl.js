@@ -5,51 +5,51 @@ routerApp.controller('deutschKulturController', ['$scope', '$http',
       $scope.selectedProject = null;
       $scope.title = 'Deutsch Kultur Projects';
 
-      var rootPath = '../content/roles/deutschKultur/';
+      var rootPath = '../content/roles/worldHistorian/deutschKultur/';
       // {"id": 0, name": "", "filepath": "", "description": ""},
       var deutschKulturProjects = [
         {
-        "id": 0, "name": "", "filepath": "",
+        "id": 0, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 1, "name": "", "filepath": "",
+        "id": 1, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 2, "name": "", "filepath": "",
+        "id": 2, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 3, "name": "", "filepath": "",
+        "id": 3, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 4, "name": "", "filepath": "",
+        "id": 4, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 5, "name": "", "filepath": "",
+        "id": 5, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 6, "name": "", "filepath": "",
+        "id": 6, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 7, "name": "", "filepath": "",
+        "id": 7, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 8, "name": "", "filepath": "",
+        "id": 8, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 9, "name": "", "filepath": "",
+        "id": 9, "name": "", "filepath": rootPath + "",
         "description": ""
         },
         {
-        "id": 10, "name": "", "filepath": "",
+        "id": 10, "name": "", "filepath": rootPath + "",
         "description": ""
         },
       ];
