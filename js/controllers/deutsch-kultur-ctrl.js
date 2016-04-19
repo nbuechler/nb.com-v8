@@ -5,7 +5,7 @@ routerApp.controller('deutschKulturController', ['$scope', '$http',
       $scope.selectedProject = null;
       $scope.title = 'Deutsch Kultur Projects';
 
-      var rootPath = '../content/roles/cultutralAnthropologist/deutsch/';
+      var rootPath = '../content/roles/culturalAnthropologist/deutsch/';
       // {"id": 0, name": "", "filepath": "", "description": ""},
       var deutschKulturProjects = [
         {
