@@ -7,6 +7,14 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
+/* Hide sceondary nave from mobile*/
+
+@media only screen and (max-width: 767px) {
+    .secondary-navbar {
+        display: none;
+    }
+}
+
 /*
  * Style tweaks
  * --------------------------------------------------
