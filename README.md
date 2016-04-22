@@ -11,3 +11,8 @@ bower install
 python -m SimpleHTTPServer
 
 Now, go to localhost:8000 in your browser and the page will show
+
+
+
+#Other notes:
+This project is made with Angular.js (1 not 2) and has no back-end so that it can run in a very cost effective way.
