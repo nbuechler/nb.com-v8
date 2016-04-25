@@ -28,7 +28,7 @@ routerApp.controller('formController', ['$scope', '$http',
         {"name": "", "filepath": rootPath + "FORM-Brand-Guide_Page_17.jpg", "t_filepath": tRootPath + "FORM-Brand-Guide_Page_17.jpg"},
         {"name": "", "filepath": rootPath + "FORM-Brand-Guide_Page_18.jpg", "t_filepath": tRootPath + "FORM-Brand-Guide_Page_18.jpg"},
         {"name": "", "filepath": rootPath + "FORM-Brand-Guide_Page_19.jpg", "t_filepath": tRootPath + "FORM-Brand-Guide_Page_19.jpg"},
-        {"name": "", "filepath": rootPath + "FORM-Brand-Guide_Page_20.jpg", "t_filepath": tRootPath + "FORM-Brand-Guide_Page_20.jpg"},
+        {"name": "", "filepath": rootPath + "FORM-Brand-Guide_Page_02.jpg", "t_filepath": tRootPath + "FORM-Brand-Guide_Page_02.jpg"},
       ];
 
       $scope.images = formImages;
