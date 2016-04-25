@@ -3,7 +3,7 @@ routerApp.controller('photographerController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;
-      $scope.title = 'Artist Projects';
+      $scope.title = 'Photographer Projects';
 
       var rootPath = '../content/roles/photographer/WR/';
       var tRootPath = '../content/roles/photographer/T/';

@@ -3,7 +3,7 @@ routerApp.controller('painterController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;
-      $scope.title = 'Artist Projects';
+      $scope.title = 'Painter Projects';
 
       var rootPath = '../content/roles/painter/WR/';
       var tRootPath = '../content/roles/painter/T/';
