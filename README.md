@@ -1,5 +1,5 @@
 # nb.com-v8
-Version 8 because I've made quite a few web pages for myself, and I've lost count
+Version 8 because I've made quite a few web previous versions of my webpage, and I've lost count
 
 # make sure to build first!
 npm install
