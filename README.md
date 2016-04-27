@@ -1,6 +1,11 @@
 # nb.com-v8
 Version 8 because I've made quite a few web previous versions of my webpage, and I've lost count
 
+
+# Overview
+The aim of this project is to showcase any projects or activties I have done or am doing.
+
+
 # make sure to build first!
 npm install
 bower install
