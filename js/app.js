@@ -1,7 +1,8 @@
 var routerApp = angular.module('routerApp', ['ui.router', 'ngMaterial']);
 
-routerApp.config(function($stateProvider, $urlRouterProvider) {
+routerApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
 
+    $sceProvider.enabled(false); // Injection might be possible!!
     $urlRouterProvider.otherwise('/home');
 
     $stateProvider
