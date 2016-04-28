@@ -1,7 +1,7 @@
 // NOTE: routerApp is defined in app.js
 routerApp.controller('scorpV2Controller', ['$scope', '$http',
     function($scope, $http) {
-      $scope.default = 'Please, understand that this is something more than a book or a guide. It is cumulative of many different ideas and concepts. My point is simple, and I hope that you agree. You can do more with the help of others than you can on your own. As an example, Scorpion Success started out as an idea formed from one person, and has evolved into an entire finished product created out of the story telling of alumni of Oakland Mills High School. This is an idea that originated with Nathaniel Buechler, Class of 2009, and is supported by the Oakland Mills High School Alumni Association.';
+      $scope.default = 'This is a cumulative summary of many different ideas and concepts. It shows one can do more with the help of others. This is version two of Scorpion Success, named after the high school mascot of its students.';
       $scope.selectedProject = null;
       $scope.title = 'Scorpion Success Version 2';
 
