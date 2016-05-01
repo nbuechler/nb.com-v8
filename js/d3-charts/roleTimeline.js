@@ -5,7 +5,7 @@ var roleData = [
 		{"name" : "Artist", "startDate": 1996, "url": "artist",
 		"endDate" : currentYear, "color": "#56222E", "fileName" : "src='images/web-rdy_icons/artist.jpg'"},
 		{"name" : "Musician", "startDate": "2000", "url": "musician",
-		"endDate" : currentYear, "color": "#3B2F23", "fileName" : "src='images/web-rdy_icons/musician.jpg'"},
+		"endDate" : currentYear, "color": "#763344", "fileName" : "src='images/web-rdy_icons/musician.jpg'"},
 		{"name" : "Painter", "startDate": "2005", "url": "painter",
 		"endDate" : currentYear, "color": "#6C3433", "fileName" : "src='images/web-rdy_icons/painter.jpg'"},
 		{"name" : "Photographer", "startDate": "2008", "url": "photographer",
@@ -19,7 +19,7 @@ var roleData = [
 		{"name" : "Social Scientist", "startDate": "2010", "url": "social-scientist",
 		"endDate" : currentYear, "color": "#262561", "fileName" : "src='images/web-rdy_icons/social-scientist.jpg'"},
 		{"name" : "Political Economist", "startDate": "2010", "url": "political-economist",
-		"endDate" : currentYear, "color": "#0C0B11", "fileName" : "src='images/web-rdy_icons/political-economist.jpg'"},
+		"endDate" : currentYear, "color": "#181737", "fileName" : "src='images/web-rdy_icons/political-economist.jpg'"},
 		{"name" : "Comparative Institutionalist", "startDate": "2010", "url": "comparative-institutionalist",
 		"endDate" : currentYear, "color": "#3C5F7D", "fileName" : "src='images/web-rdy_icons/comparative-institutionalist.jpg'"},
 		{"name" : "World Historian", "startDate": "2010", "url": "world-historian",
@@ -113,20 +113,20 @@ var svg = d3.select("#roleChart").append("svg")
 	  .on("mouseover", function(d) {
 		  d3.select("#roleFocus").html(function() {
 				  if(d.startDate != currentYear - 1){
-				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img class='roleIcon-border'" + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
 				  }
 				  else{
-				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img class='roleIcon-border'" + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
 				  }
 				});
 			})
 	  .on("click", function(d) {
 		  d3.select("#roleFocus").html(function() {
 				  if(d.startDate != currentYear - 1){
-				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img class='roleIcon-border'" + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " years</h2></div>" ;
 				  }
 				  else{
-				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img " + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
+				  return "<div style='margin-top: 70px'><a href='#/" + d.url + "'><span><img class='roleIcon-border'" + d.fileName + "/></span></a><br><h2 style='text-align:center'>" + parseInt(currentYear - d.startDate) + " year</h2></div>" ;
 				  }
 				});
 			})

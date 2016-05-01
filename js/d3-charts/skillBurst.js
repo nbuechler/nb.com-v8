@@ -84,7 +84,7 @@ var root = {
 				},
 				{
 				"name": "Musician",
-				"color": "#3B2F23",
+				"color": "#763344",
 				"children": [
 					{"name": "Trumpet", "size": 1},
 					{"name": "Cello", "size": 1}
@@ -285,7 +285,7 @@ var root = {
 				},
 				{
 				"name": "Political Economist",
-				"color": "#0C0B11",
+				"color": "#181737",
 				"children": [
 					{"name": "Researching",
 					"children": [
