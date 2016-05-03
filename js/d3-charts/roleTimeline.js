@@ -8,6 +8,8 @@ var roleData = [
 		"endDate" : currentYear, "color": "#763344", "fileName" : "src='images/web-rdy_icons/musician.jpg'"},
 		{"name" : "Painter", "startDate": "2005", "url": "painter",
 		"endDate" : currentYear, "color": "#6C3433", "fileName" : "src='images/web-rdy_icons/painter.jpg'"},
+		{"name" : "Linguist", "startDate": "2005", "url": "linguist",
+		"endDate" : currentYear, "color": "#606B81", "fileName" : "src='images/web-rdy_icons/linguist.jpg'"},
 		{"name" : "Photographer", "startDate": "2008", "url": "photographer",
 		"endDate" : currentYear, "color": "#824648", "fileName" : "src='images/web-rdy_icons/photographer.jpg'"},
 		{"name" : "Graphic Designer", "startDate": "2009", "url": "graphic-designer",
@@ -37,7 +39,15 @@ var roleData = [
 		{"name" : "Back-end Developer", "startDate": "2013", "url": "back-end-developer",
 		"endDate" : currentYear, "color": "#767281", "fileName" : "src='images/web-rdy_icons/back-end-developer.jpg'"},
 		{"name" : "Front-end Developer", "startDate": "2013", "url": "front-end-developer",
-		"endDate" : currentYear, "color": "#31252F", "fileName" : "src='images/web-rdy_icons/front-end-developer.jpg'"}
+		"endDate" : currentYear, "color": "#31252F", "fileName" : "src='images/web-rdy_icons/front-end-developer.jpg'"},
+		{"name" : "Software Engineer", "startDate": "2014", "url": "software-engineer",
+		"endDate" : currentYear, "color": "#795731", "fileName" : "src='images/web-rdy_icons/software-engineer.jpg'"},
+		{"name" : "Biologist", "startDate": "2015", "url": "biologist",
+		"endDate" : currentYear, "color": "#348C35", "fileName" : "src='images/web-rdy_icons/biologist.jpg'"},
+		{"name" : "Botanist", "startDate": "2015", "url": "botanist",
+		"endDate" : currentYear, "color": "#101B13", "fileName" : "src='images/web-rdy_icons/botanist.jpg'"},
+		{"name" : "Affective Engineer", "startDate": "2015", "url": "affective-engineer",
+		"endDate" : currentYear, "color": "#796950", "fileName" : "src='images/web-rdy_icons/affective-engineer.jpg'"},
 ]
 
 
