@@ -234,32 +234,73 @@ var root = {
 			]
 			},
 			{
-			"name": "Engineer",
-			"color": "#775923",
-			"children": [
-				{"name": "Critical Thinking", "size": 1},
-				{"name": "Decision Making", "size": 1},
-				{"name": "Creativity", "size": 1},
-				{"name": "Time Management", "size": 1},
-				{"name": "Active Listenting", "size": 1}
-			]
-			},
-			{
 			"name": "Natural Scientist",
 			"color": "#296A52",
 			"children": [
-				{"name": "Observing", "size": 1},
-				{"name": "Documenting", "size": 1},
-				{"name": "Sharing", "size": 1},
-				{"name": "Critical Thinking", "size": 1},
-				{"name": "Botany", "size": 1},
-				{"name": "Scientific Method", "size": 1}
+				{
+				"name": "Biologist",
+				"color": "#348C35",
+				"children": [
+					{"name": "Sciencing", "size": 1},
+					]
+				},
+				{
+				"name": "Botanist",
+				"color": "#101B13",
+				"children": [
+					{"name": "Sciencing", "size": 1},
+					]
+				},
+			]
+			},
+			{
+			"name": "Engineer",
+			"color": "#775923",
+			"children": [
+				{
+				"name": "Software Engineer",
+				"color": "#795731",
+				"children": [
+					{"name": "Engineering", "size": 1},
+					]
+				},
+				{
+				"name": "Affective Engineer",
+				"color": "#796950",
+				"children": [
+					{"name": "Engineering", "size": 1},
+					]
+				},
 			]
 			},
 			{
 			"name": "Social Scientist",
 			"color": "#262561",
 			"children": [
+				{
+				"name": "Linguist",
+				"color": "#606B81",
+				"children": [
+					{"name": "English", "size": 1},
+					{"name": "German", "size": 1},
+					{"name": "Spanish", "size": 1},
+					{"name": "French", "size": 1},
+					{"name": "Italian", "size": 1},
+					{"name": "Swedish", "size": 1},
+					{"name": "Portuguese", "size": 1},
+					{"name": "Norwegian", "size": 1},
+					{"name": "Russian", "size": 1},
+					{"name": "Turkish", "size": 1},
+					{"name": "Irish", "size": 1},
+					{"name": "Danish", "size": 1},
+					{"name": "Ukrainian", "size": 1},
+					{"name": "Dutch", "size": 1},
+					{"name": "Polish", "size": 1},
+					{"name": "Catalan", "size": 1},
+					{"name": "Welsh", "size": 1},
+					{"name": "Esperanza", "size": 1},
+					]
+				},
 				{
 				"name": "Journalist",
 				"color": "#412F6B",
