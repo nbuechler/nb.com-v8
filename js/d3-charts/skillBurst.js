@@ -110,7 +110,6 @@ var root = {
 				"children": [
 					{
 					"name": "Data Visualization Languages",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "D3.js", "size": 1},
@@ -121,7 +120,6 @@ var root = {
 					]},
 					{
 					"name": "Front-End MVC",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "angular.js", "size": 1},
@@ -139,7 +137,6 @@ var root = {
 					]},
 					{
 					"name": "jQuery",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "jQuery UI", "size": 1},
@@ -148,7 +145,6 @@ var root = {
 					},
 					{
 					"name": "Content Management Systems(CMS)",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "WordPress", "size": 1},
@@ -158,7 +154,6 @@ var root = {
 					},
 					{
 					"name": "Data Formats",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "CSV", "size": 1},
@@ -177,10 +172,19 @@ var root = {
 				"color": "#767281",
 				"children": [
 					{"name": "PHP", "size": 1},
-					{"name": "Python", "size": 1},
+					{
+					"name": "Python",
+					"size": 1,
+					"children": [
+						{"name": "Groovy", "size": 1},
+						{"name": "Grails", "size": 1},
+						{"name": "GSP", "size": 1},
+						{"name": "Gradle", "size": 1},
+						{"name": "Spock", "size": 1}
+					]
+					},
 					{
 					"name": "Groovy and Grails(GGTS)",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "Groovy", "size": 1},
@@ -192,7 +196,6 @@ var root = {
 					},
 					{
 					"name": "Eclipse, J2EE",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "Java", "size": 1},
@@ -204,7 +207,6 @@ var root = {
 					},
 					{
 					"name": "Spring(STS)",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "Spring Framework", "size": 1},
@@ -216,7 +218,6 @@ var root = {
 					},
 					{
 					"name": "Database Languages",
-					"years": 1,
 					"size": 1,
 					"children": [
 						{"name": "MySQL", "size": 1},
