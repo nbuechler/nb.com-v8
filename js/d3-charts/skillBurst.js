@@ -102,6 +102,22 @@ var root = {
 					{"name": "HTML/XHTML/HTML5", "size": 1},
 					{"name": "CSS/CSS2/CSS3", "size": 1},
 					{"name": "JavaScript (ES5/ES6)", "size": 1},
+					{
+					"name": "Tools",
+					"color": "#632F5F",
+					"children": [
+						{"name": "Atom.io", "size": 1},
+						{"name": "Brackets.io", "size": 1},
+						{"name": "Notepad++", "size": 1},
+						{"name": "Webstorm", "size": 1},
+						{"name": "vim", "size": 1},
+						{"name": "JIRA", "size": 1},
+						{"name": "Git", "size": 1},
+						{"name": "SVN", "size": 1},
+						{"name": "Apache", "size": 1},
+						{"name": "VirtualBox", "size": 1},
+						]
+					},
 					]
 				},
 				{
@@ -122,6 +138,8 @@ var root = {
 					"name": "Front-End MVC",
 					"size": 1,
 					"children": [
+						{"name": "yeoman.io", "size": 1},
+						{"name": "ionic.io", "size": 1},
 						{"name": "angular.js", "size": 1},
 						{"name": "express.js", "size": 1},
 						{"name": "ember.js", "size": 1},
@@ -129,11 +147,15 @@ var root = {
 						{"name": "MEAN.js", "size": 1},
 						{"name": "moustache.js", "size": 1},
 						{"name": "handlebars.js", "size": 1},
+						{"name": "knockout.js", "size": 1},
 						{"name": "meteor.js", "size": 1},
-						{"name": "Grunt", "size": 1},
 						{"name": "react.js", "size": 1},
 						{"name": "flux", "size": 1},
-						{"name": "redux", "size": 1}
+						{"name": "redux", "size": 1},
+						{"name": "Grunt", "size": 1},
+						{"name": "npm", "size": 1},
+						{"name": "bower", "size": 1},
+						{"name": "webpack", "size": 1},
 					]},
 					{
 					"name": "jQuery",
@@ -176,11 +198,10 @@ var root = {
 					"name": "Python",
 					"size": 1,
 					"children": [
-						{"name": "Groovy", "size": 1},
-						{"name": "Grails", "size": 1},
-						{"name": "GSP", "size": 1},
-						{"name": "Gradle", "size": 1},
-						{"name": "Spock", "size": 1}
+						{"name": "Flask", "size": 1},
+						{"name": "Tornado", "size": 1},
+						{"name": "Django", "size": 1},
+						{"name": "pip", "size": 1},
 					]
 					},
 					{
@@ -191,7 +212,7 @@ var root = {
 						{"name": "Grails", "size": 1},
 						{"name": "GSP", "size": 1},
 						{"name": "Gradle", "size": 1},
-						{"name": "Spock", "size": 1}
+						{"name": "Spock", "size": 1},
 					]
 					},
 					{
@@ -217,7 +238,7 @@ var root = {
 					]
 					},
 					{
-					"name": "Database Languages",
+					"name": "Databases",
 					"size": 1,
 					"children": [
 						{"name": "MySQL", "size": 1},
@@ -225,7 +246,19 @@ var root = {
 						{"name": "HQL", "size": 1},
 						{"name": "SQL", "size": 1},
 						{"name": "Hibernate", "size": 1},
-						{"name": "Mongo DB", "size": 1}
+						{"name": "Mongo DB", "size": 1},
+						{"name": "Neo4j", "size": 1}
+					]
+				},
+					{
+					"name": "DevOps",
+					"size": 1,
+					"children": [
+						{"name": "Travis CI", "size": 1},
+						{"name": "AWS", "size": 1},
+						{"name": "Heroku", "size": 1},
+						{"name": "TeamCity", "size": 1},
+						{"name": "Sonarqube", "size": 1},
 					]
 					}
 				]
