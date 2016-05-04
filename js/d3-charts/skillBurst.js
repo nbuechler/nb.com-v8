@@ -36,7 +36,6 @@ var root = {
 					{
 					"name": "Graphic Design Software",
 					"children": [
-						{"name": "GIMP","size": 1},
 						{"name": "Illustrator","size": 1},
 						{"name": "InDesign", "size": 1},
 						{"name": "Photoshop", "size": 1},
@@ -63,12 +62,12 @@ var root = {
 				"children": [
 					{"name": "Photography",
 					"children": [
-						{"name": "Fireworks", "size": 1},
-						{"name": "Landscape", "size": 1},
-						{"name": "Manufactured", "size": 1},
-						{"name": "Nature", "size": 1},
-						{"name": "Single Subject", "size": 1},
-						{"name": "Panorama", "size": 1}
+						{"name": "Retouching", "size": 1},
+						{"name": "Enhancing", "size": 1},
+						{"name": "Photo Mainpulation", "size": 1},
+						{"name": "Archiving", "size": 1},
+						{"name": "Processing", "size": 1},
+						{"name": "Producing", "size": 1}
 						]
 					},
 					]
@@ -97,13 +96,12 @@ var root = {
 			"color": "#632F5F",
 			"children": [
 				{
-				"name": "Basic Programming",
-				"years": 4,
+				"name": "Computer Programmer",
 				"color": "#632F5F",
 				"children": [
-					{"name": "HTML/XHTML/HTML5", "years": 4, "size": 1},
-					{"name": "CSS/CSS2/CSS3", "years": 4, "size": 1},
-					{"name": "JavaScript", "years": 3, "size": 1},
+					{"name": "HTML/XHTML/HTML5", "size": 1},
+					{"name": "CSS/CSS2/CSS3", "size": 1},
+					{"name": "JavaScript (ES5/ES6)", "size": 1},
 					]
 				},
 				{
