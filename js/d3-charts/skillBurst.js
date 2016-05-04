@@ -113,37 +113,37 @@ var root = {
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "D3.js", "years": 1, "size": 1},
-						{"name": "dc.js", "years": 1, "size": 1},
-						{"name": "crossfilter.js", "years": 1, "size": 1},
-						{"name": "nv.D3", "years": 1, "size": 1},
-						{"name": "Google Charts", "years": 1, "size": 1}
+						{"name": "D3.js", "size": 1},
+						{"name": "dc.js", "size": 1},
+						{"name": "crossfilter.js", "size": 1},
+						{"name": "nv.D3", "size": 1},
+						{"name": "Google Charts", "size": 1}
 					]},
 					{
 					"name": "Front-End MVC",
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "angular.js", "years": 1, "size": 1},
-						{"name": "express.js", "years": 1, "size": 1},
-						{"name": "ember.js", "years": 1, "size": 1},
-						{"name": "node.js", "years": 1, "size": 1},
-						{"name": "MEAN.js", "years": 1, "size": 1},
-						{"name": "moustache.js", "years": 1, "size": 1},
-						{"name": "handlebars.js", "years": 1, "size": 1},
-						{"name": "meteor.js", "years": 1, "size": 1},
-						{"name": "Grunt", "years": 1, "size": 1},
-						{"name": "react.js", "years": 1, "size": 1},
-						{"name": "flux", "years": 1, "size": 1},
-						{"name": "redux", "years": 1, "size": 1}
+						{"name": "angular.js", "size": 1},
+						{"name": "express.js", "size": 1},
+						{"name": "ember.js", "size": 1},
+						{"name": "node.js", "size": 1},
+						{"name": "MEAN.js", "size": 1},
+						{"name": "moustache.js", "size": 1},
+						{"name": "handlebars.js", "size": 1},
+						{"name": "meteor.js", "size": 1},
+						{"name": "Grunt", "size": 1},
+						{"name": "react.js", "size": 1},
+						{"name": "flux", "size": 1},
+						{"name": "redux", "size": 1}
 					]},
 					{
 					"name": "jQuery",
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "jQuery UI", "years": 1, "size": 1},
-						{"name": "jQuery Mobile", "years": 1, "size": 1}
+						{"name": "jQuery UI", "size": 1},
+						{"name": "jQuery Mobile", "size": 1}
 					]
 					},
 					{
@@ -151,9 +151,9 @@ var root = {
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "WordPress", "years": 1, "size": 1},
-						{"name": "Joomla", "years": 1, "size": 1},
-						{"name": "phpBB", "years": 1, "size": 1}
+						{"name": "WordPress", "size": 1},
+						{"name": "Joomla", "size": 1},
+						{"name": "phpBB", "size": 1}
 					]
 					},
 					{
@@ -161,33 +161,33 @@ var root = {
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "CSV", "years": 1, "size": 1},
-						{"name": "TSV", "years": 1, "size": 1},
-						{"name": "JSON", "years": 1, "size": 1},
-						{"name": "BSON", "years": 1, "size": 1},
-						{"name": "XML", "years": 1, "size": 1}
+						{"name": "CSV", "size": 1},
+						{"name": "TSV", "size": 1},
+						{"name": "JSON", "size": 1},
+						{"name": "BSON", "size": 1},
+						{"name": "XML", "size": 1}
 					]
 					},
-					{"name": "Bootstrap", "years": 1, "size": 1},
-					{"name": "AJAX", "years": 1, "size": 1}
+					{"name": "Bootstrap", "size": 1},
+					{"name": "AJAX", "size": 1}
 				]
 				},
 				{
 				"name": "Back-End Developer",
 				"color": "#767281",
 				"children": [
-					{"name": "PHP", "years": 1, "size": 1},
-					{"name": "Python", "years": 1, "size": 1},
+					{"name": "PHP", "size": 1},
+					{"name": "Python", "size": 1},
 					{
 					"name": "Groovy and Grails(GGTS)",
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "Groovy", "years": 1, "size": 1},
-						{"name": "Grails", "years": 1, "size": 1},
-						{"name": "GSP", "years": 1, "size": 1},
-						{"name": "Gradle", "years": 1, "size": 1},
-						{"name": "Spock", "years": 1, "size": 1}
+						{"name": "Groovy", "size": 1},
+						{"name": "Grails", "size": 1},
+						{"name": "GSP", "size": 1},
+						{"name": "Gradle", "size": 1},
+						{"name": "Spock", "size": 1}
 					]
 					},
 					{
@@ -195,11 +195,11 @@ var root = {
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "Java", "years": 1, "size": 1},
-						{"name": "JSP", "years": 1, "size": 1},
-						{"name": "JUnit", "years": 1, "size": 1},
-						{"name": "Maven", "years": 1, "size": 1},
-						{"name": "Ant", "years": 1, "size": 1}
+						{"name": "Java", "size": 1},
+						{"name": "JSP", "size": 1},
+						{"name": "JUnit", "size": 1},
+						{"name": "Maven", "size": 1},
+						{"name": "Ant", "size": 1}
 					]
 					},
 					{
@@ -207,11 +207,11 @@ var root = {
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "Spring Framework", "years": 1, "size": 1},
-						{"name": "Spring MVC", "years": 1, "size": 1},
-						{"name": "Spring Security", "years": 1, "size": 1},
-						{"name": "SpringSource TC Server", "years": 1, "size": 1},
-						{"name": "Thymeleaf", "years": 1, "size": 1}
+						{"name": "Spring Framework", "size": 1},
+						{"name": "Spring MVC", "size": 1},
+						{"name": "Spring Security", "size": 1},
+						{"name": "SpringSource TC Server", "size": 1},
+						{"name": "Thymeleaf", "size": 1}
 					]
 					},
 					{
@@ -219,12 +219,12 @@ var root = {
 					"years": 1,
 					"size": 1,
 					"children": [
-						{"name": "MySQL", "years": 1, "size": 1},
-						{"name": "Oracle", "years": 1, "size": 1},
-						{"name": "HQL", "years": 1, "size": 1},
-						{"name": "SQL", "years": 1, "size": 1},
-						{"name": "Hibernate", "years": 1, "size": 1},
-						{"name": "Mongo DB", "years": 1, "size": 1}
+						{"name": "MySQL", "size": 1},
+						{"name": "Oracle", "size": 1},
+						{"name": "HQL", "size": 1},
+						{"name": "SQL", "size": 1},
+						{"name": "Hibernate", "size": 1},
+						{"name": "Mongo DB", "size": 1}
 					]
 					}
 				]
