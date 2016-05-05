@@ -271,6 +271,13 @@ var root = {
 			"color": "#296A52",
 			"children": [
 				{
+				"name": "Natural Scientist",
+				"color": "#296A52",
+				"children": [
+					{"name": "Sciencing", "size": 1},
+					]
+				},
+				{
 				"name": "Biologist",
 				"color": "#348C35",
 				"children": [
@@ -290,6 +297,13 @@ var root = {
 			"name": "Engineer",
 			"color": "#775923",
 			"children": [
+				{
+				"name": "Engineer",
+				"color": "#775923",
+				"children": [
+					{"name": "Engineering", "size": 1},
+					]
+				},
 				{
 				"name": "Software Engineer",
 				"color": "#795731",
