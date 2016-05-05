@@ -60,6 +60,6 @@ nbApp.controller('artistController', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = artistImages.length;
+      $scope.projectCount = artistImages.length || 0;
 
     }]);

@@ -84,4 +84,31 @@ nbApp.controller('photographerController', ['$scope', '$http',
           $scope.selectedImage = image;
       };
 
+      /*
+       * Skills and projects
+       */
+
+      $scope.skills = [
+        {"name": "Retouching", "size": 1},
+        {"name": "Enhancing", "size": 1},
+        {"name": "Photo Mainpulation", "size": 1},
+        {"name": "Archiving", "size": 1},
+        {"name": "Processing", "size": 1},
+        {"name": "Producing", "size": 1}
+      ];
+
+      var skillString = "";
+
+      for (var i = 0; i < $scope.skills.length; i++) {
+        if($scope.skills.length - 1 == i){
+          skillString += $scope.skills[i].name;
+        } else {
+          skillString += $scope.skills[i].name + ', ';
+        }
+      };
+
+      $scope.skillString = skillString;
+
+      $scope.projectCount = photographerImages.length || 0;
+
     }]);

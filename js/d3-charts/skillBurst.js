@@ -24,11 +24,11 @@ var root = {
 					"name": "Designing",
 					"children": [
 						{"name": "Books", "size": 1},
-						{"name": "Newsletter", "size": 1},
-						{"name": "Poster", "size": 1},
-						{"name": "Banner", "size": 1},
-						{"name": "Flier", "size": 1},
-						{"name": "Logo", "size": 1},
+		        {"name": "Newsletters", "size": 1},
+		        {"name": "Posters", "size": 1},
+		        {"name": "Banners", "size": 1},
+		        {"name": "Fliers", "size": 1},
+		        {"name": "Logos", "size": 1},
 						{"name": "Motion Graphics", "size": 1},
 						{"name": "Web Graphics", "size": 1}
 						]
