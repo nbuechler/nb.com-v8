@@ -311,6 +311,17 @@ var root = {
 			"color": "#262561",
 			"children": [
 				{
+				"name": "Social Scientist",
+				"color": "#262561",
+				"children": [
+					{"name": "Analyzing", "size": 1},
+					{"name": "Researching", "size": 1},
+					{"name": "Writing", "size": 1},
+					{"name": "Grant Writing", "size": 1},
+					{"name": "Advocating", "size": 1}
+					]
+				},
+				{
 				"name": "Linguist",
 				"color": "#606B81",
 				"children": [
@@ -361,13 +372,7 @@ var root = {
 				"name": "Political Economist",
 				"color": "#181737",
 				"children": [
-					{"name": "Researching",
-					"children": [
-						{"name": "Analyzing", "size": 1},
-						{"name": "Researching", "size": 1},
-						{"name": "Writing", "size": 1}
-						]
-					},
+					{"name": "Researching", "size": 1},
 					{"name": "Grant Writing", "size": 1},
 					{"name": "Advocating", "size": 1}
 					]
