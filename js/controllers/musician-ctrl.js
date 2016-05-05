@@ -32,6 +32,6 @@ nbApp.controller('musicianController', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = musicProjects.length || 0;
+      $scope.projectCount = musicProjects.length + 2 || 0; //Two insturments
 
     }]);
