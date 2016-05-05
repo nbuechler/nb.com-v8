@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.directive("videoContainerDirective", function() {
+// NOTE: nbApp is defined in app.js
+nbApp.directive("videoContainerDirective", function() {
     return {
         restrict : 'E',
         templateUrl : 'js/templates/video-container.html',

@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('herbertBayerController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('herbertBayerController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Herbert Bayer designed Architype Bayer-type based on an enthusiastic approach that focused upon creating a multiple disciplinary syntheses of ideas. Bayer sought to create a simplified semiotic typeface that unified clear communication.';
       $scope.selectedProject = null;

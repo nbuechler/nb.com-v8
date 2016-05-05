@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('journalistController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('journalistController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Articles are listed on the left. Select one to read more about the topic.';
       $scope.selectedProject = null;

@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('homeController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('homeController', ['$scope', '$http',
     function($scope, $http) {
 
       $scope.hideIcon = true;

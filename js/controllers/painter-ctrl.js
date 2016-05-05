@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('painterController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('painterController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;

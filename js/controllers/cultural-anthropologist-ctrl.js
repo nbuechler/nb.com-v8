@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('culturalAnthropologistController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('culturalAnthropologistController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Projects are listed on the left. Select one to read more about the topic.';
       $scope.selectedProject = null;

@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('scorpV1Controller', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('scorpV1Controller', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'This is a cumulative summary of many different ideas and concepts. It shows one can do more with the help of others. This is version one of Scorpion Success, named after the high school mascot of its students. ';
       $scope.selectedProject = null;
