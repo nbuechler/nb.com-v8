@@ -152,6 +152,7 @@ var root = {
 						{"name": "react.js", "size": 1},
 						{"name": "flux", "size": 1},
 						{"name": "redux", "size": 1},
+						{"name": "Babel", "size": 1},
 						{"name": "Grunt", "size": 1},
 						{"name": "npm", "size": 1},
 						{"name": "bower", "size": 1},
