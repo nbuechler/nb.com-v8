@@ -24,11 +24,11 @@ var root = {
 					"name": "Designing",
 					"children": [
 						{"name": "Books", "size": 1},
-						{"name": "Newsletter", "size": 1},
-						{"name": "Poster", "size": 1},
-						{"name": "Banner", "size": 1},
-						{"name": "Flier", "size": 1},
-						{"name": "Logo", "size": 1},
+		        {"name": "Newsletters", "size": 1},
+		        {"name": "Posters", "size": 1},
+		        {"name": "Banners", "size": 1},
+		        {"name": "Fliers", "size": 1},
+		        {"name": "Logos", "size": 1},
 						{"name": "Motion Graphics", "size": 1},
 						{"name": "Web Graphics", "size": 1}
 						]
@@ -152,6 +152,7 @@ var root = {
 						{"name": "react.js", "size": 1},
 						{"name": "flux", "size": 1},
 						{"name": "redux", "size": 1},
+						{"name": "Babel", "size": 1},
 						{"name": "Grunt", "size": 1},
 						{"name": "npm", "size": 1},
 						{"name": "bower", "size": 1},
@@ -270,6 +271,13 @@ var root = {
 			"color": "#296A52",
 			"children": [
 				{
+				"name": "Natural Scientist",
+				"color": "#296A52",
+				"children": [
+					{"name": "Sciencing", "size": 1},
+					]
+				},
+				{
 				"name": "Biologist",
 				"color": "#348C35",
 				"children": [
@@ -290,6 +298,13 @@ var root = {
 			"color": "#775923",
 			"children": [
 				{
+				"name": "Engineer",
+				"color": "#775923",
+				"children": [
+					{"name": "Engineering", "size": 1},
+					]
+				},
+				{
 				"name": "Software Engineer",
 				"color": "#795731",
 				"children": [
@@ -309,6 +324,17 @@ var root = {
 			"name": "Social Scientist",
 			"color": "#262561",
 			"children": [
+				{
+				"name": "Social Scientist",
+				"color": "#262561",
+				"children": [
+					{"name": "Analyzing", "size": 1},
+					{"name": "Researching", "size": 1},
+					{"name": "Writing", "size": 1},
+					{"name": "Grant Writing", "size": 1},
+					{"name": "Advocating", "size": 1}
+					]
+				},
 				{
 				"name": "Linguist",
 				"color": "#606B81",
@@ -360,13 +386,7 @@ var root = {
 				"name": "Political Economist",
 				"color": "#181737",
 				"children": [
-					{"name": "Researching",
-					"children": [
-						{"name": "Analyzing", "size": 1},
-						{"name": "Researching", "size": 1},
-						{"name": "Writing", "size": 1}
-						]
-					},
+					{"name": "Researching", "size": 1},
 					{"name": "Grant Writing", "size": 1},
 					{"name": "Advocating", "size": 1}
 					]

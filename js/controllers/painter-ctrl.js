@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('painterController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('painterController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;
@@ -33,5 +33,29 @@ routerApp.controller('painterController', ['$scope', '$http',
       $scope.selectImage = function(image) {
           $scope.selectedImage = image;
       };
+
+      /*
+       * Skills and projects
+       */
+
+      $scope.skills = [
+        {"name": "Watercolor", "size": 1},
+        {"name": "Acrylic", "size": 1},
+        {"name": "Oil", "size": 1}
+      ];
+
+      var skillString = "";
+
+      for (var i = 0; i < $scope.skills.length; i++) {
+        if($scope.skills.length - 1 == i){
+          skillString += $scope.skills[i].name;
+        } else {
+          skillString += $scope.skills[i].name + ', ';
+        }
+      };
+
+      $scope.skillString = skillString;
+
+      $scope.projectCount = painterImages.length || 0;
 
     }]);

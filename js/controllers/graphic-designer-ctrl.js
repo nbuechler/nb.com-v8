@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('graphicDesignerController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('graphicDesignerController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;
@@ -28,5 +28,42 @@ routerApp.controller('graphicDesignerController', ['$scope', '$http',
       $scope.selectImage = function(image) {
           $scope.selectedImage = image;
       };
+
+      /*
+       * Skills and projects
+       */
+
+      $scope.skills = [
+        {"name": "Illustrator","size": 1},
+        {"name": "InDesign", "size": 1},
+        {"name": "Photoshop", "size": 1},
+        {"name": "Flash", "size": 1},
+        {"name": "AfterEffects", "size": 1},
+        {"name": "Dreamweaver", "size": 1},
+        {"name": "Bridge", "size": 1},
+        {"name": "Acrobat", "size": 1},
+        {"name": "Motion Graphics", "size": 1},
+        {"name": "Web Graphics", "size": 1},
+        {"name": "Books", "size": 1},
+        {"name": "Newsletters", "size": 1},
+        {"name": "Posters", "size": 1},
+        {"name": "Banners", "size": 1},
+        {"name": "Fliers", "size": 1},
+        {"name": "Logos", "size": 1},
+      ];
+
+      var skillString = "";
+
+      for (var i = 0; i < $scope.skills.length; i++) {
+        if($scope.skills.length - 1 == i){
+          skillString += $scope.skills[i].name;
+        } else {
+          skillString += $scope.skills[i].name + ', ';
+        }
+      };
+
+      $scope.skillString = skillString;
+
+      $scope.projectCount = graphicDesignerImages.length + 4 || 0; /* Four mega projects*/
 
     }]);

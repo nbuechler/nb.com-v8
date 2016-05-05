@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('formController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('formController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'The purpose of FORM is strictly educational and artistic hence any intellectual property it may be similar to is covered under fair-use. This project does not currently seek to profit and does not plan to compete with other entities. It is clearly a concept created to brand a resilient community of citizen creators. Finally, I would appreciate any feedback and suggestions. For other inquiries, please E-mail me directly - natebuechler (at) gmail (dot) com .';
       $scope.selectedProject = null;

@@ -1,7 +1,11 @@
 <div ui-view="intro"></div>
 
-<artist-nav-directive></artist-nav-directive>
+<div class="row" ng-controller="artistController">
+  <statistics-container-directive></statistics-container-directive>
+</div>
 
 <div class="row" ng-controller="artistController">
   <image-artist-container-directive></image-artist-container-directive>
 </div>
+
+<artist-nav-directive></artist-nav-directive>

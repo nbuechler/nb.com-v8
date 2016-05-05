@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('comparativeInstitutionalistController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('comparativeInstitutionalistController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Projects are listed on the left. Select one to read more about the topic.';
       $scope.selectedProject = null;
@@ -63,5 +63,29 @@ routerApp.controller('comparativeInstitutionalistController', ['$scope', '$http'
       $scope.selectProject = function(project) {
           $scope.selectedProject = project;
       };
+
+      /*
+       * Skills and projects
+       */
+
+      $scope.skills = [
+        {"name": "Researching", "size": 1},
+        {"name": "Grant Writing", "size": 1},
+        {"name": "Advocating", "size": 1}
+      ];
+
+      var skillString = "";
+
+      for (var i = 0; i < $scope.skills.length; i++) {
+        if($scope.skills.length - 1 == i){
+          skillString += $scope.skills[i].name;
+        } else {
+          skillString += $scope.skills[i].name + ', ';
+        }
+      };
+
+      $scope.skillString = skillString;
+
+      $scope.projectCount = comparativeInstitutionalistProjects.length + 7 + 5 || 0; /*Other projects from sub roles*/
 
     }]);

@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.directive("socialScientistNavDirective", function() {
+// NOTE: nbApp is defined in app.js
+nbApp.directive("socialScientistNavDirective", function() {
     return {
         restrict : 'E',
         templateUrl : 'js/templates/social-scientist-nav.html'

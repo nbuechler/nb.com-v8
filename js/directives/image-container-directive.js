@@ -1,11 +1,11 @@
-// NOTE: routerApp is defined in app.js
-routerApp.directive("imageArtistContainerDirective", function() {
+// NOTE: nbApp is defined in app.js
+nbApp.directive("imageArtistContainerDirective", function() {
     return {
         restrict : 'E',
         templateUrl : 'js/templates/image-artist-container.html'
     };
 });
-routerApp.directive("imageSocialContainerDirective", function() {
+nbApp.directive("imageSocialContainerDirective", function() {
     return {
         restrict : 'E',
         templateUrl : 'js/templates/image-social-container.html'

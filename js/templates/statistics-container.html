@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="well col-lg-9 col-md-12 col-sm-12" style="text-align: center; height: 200px;">
+          <div style="position: relative;
+                      top: 50%;
+                      transform: translateY(-50%);">
+            <p>Skills</p>
+            {{skillString}}
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12" style="text-align: center;">
+          <svg width="200" height="200">
+            <g transform="translate(100,100)">
+              <g class="slice">
+                <path fill="#222" stroke="#FFF" stroke-width="3" d="M0,90A90,90 0 1,1 0,-90A90,90 0 1,1 0,90Z"></path>
+                <text fill="#FFF" transform="translate(0,5)" text-anchor="middle" style="font-size: 48px;">{{projectCount}}</text>
+                <text fill="#FFF" transform="translate(0,40)" text-anchor="middle" style="font-size: 14px;">Projects</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

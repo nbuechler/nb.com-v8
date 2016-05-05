@@ -1,9 +1,9 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('journalistController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('journalistController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Articles are listed on the left. Select one to read more about the topic.';
       $scope.selectedProject = null;
-      $scope.title = 'Journalist Articles';
+      $scope.title = 'Journalist Projects';
 
       var rootPath = '../content/roles/journalist/pdf/';
       // {"id": 0, name": "", "filepath": "", "description": ""},
@@ -51,5 +51,34 @@ routerApp.controller('journalistController', ['$scope', '$http',
       $scope.selectProject = function(project) {
           $scope.selectedProject = project;
       };
+
+      /*
+       * Skills and projects
+       */
+
+      $scope.skills = [
+        {"name": "Blogging", "size": 1},
+        {"name": "Vlogging", "size": 1},
+        {"name": "Interviewing", "size": 1},
+        {"name": "Writing", "size": 1},
+        {"name": "Documenting", "size": 1},
+        {"name": "Researching", "size": 1},
+        {"name": "Organization", "size": 1},
+        {"name": "Planning", "size": 1}
+      ];
+
+      var skillString = "";
+
+      for (var i = 0; i < $scope.skills.length; i++) {
+        if($scope.skills.length - 1 == i){
+          skillString += $scope.skills[i].name;
+        } else {
+          skillString += $scope.skills[i].name + ', ';
+        }
+      };
+
+      $scope.skillString = skillString;
+
+      $scope.projectCount = journalistProjects.length || 0; /*Mega projects*/
 
     }]);

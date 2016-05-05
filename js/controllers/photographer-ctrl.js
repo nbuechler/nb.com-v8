@@ -1,5 +1,5 @@
-// NOTE: routerApp is defined in app.js
-routerApp.controller('photographerController', ['$scope', '$http',
+// NOTE: nbApp is defined in app.js
+nbApp.controller('photographerController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;
@@ -83,5 +83,32 @@ routerApp.controller('photographerController', ['$scope', '$http',
       $scope.selectImage = function(image) {
           $scope.selectedImage = image;
       };
+
+      /*
+       * Skills and projects
+       */
+
+      $scope.skills = [
+        {"name": "Retouching", "size": 1},
+        {"name": "Enhancing", "size": 1},
+        {"name": "Photo Mainpulation", "size": 1},
+        {"name": "Archiving", "size": 1},
+        {"name": "Processing", "size": 1},
+        {"name": "Producing", "size": 1}
+      ];
+
+      var skillString = "";
+
+      for (var i = 0; i < $scope.skills.length; i++) {
+        if($scope.skills.length - 1 == i){
+          skillString += $scope.skills[i].name;
+        } else {
+          skillString += $scope.skills[i].name + ', ';
+        }
+      };
+
+      $scope.skillString = skillString;
+
+      $scope.projectCount = photographerImages.length || 0;
 
     }]);
