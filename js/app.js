@@ -106,6 +106,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 '': { templateUrl: '../views/cultural-anthropologist.html' },
             }
         })
+        .state('linguist', {
+            url: '/linguist',
+            views: {
+                '': { templateUrl: '../views/linguist.html' },
+            }
+        })
 
         /*
         Computer Programmer Section
