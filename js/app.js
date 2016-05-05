@@ -106,6 +106,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 '': { templateUrl: '../views/cultural-anthropologist.html' },
             }
         })
+        .state('linguist', {
+            url: '/linguist',
+            views: {
+                '': { templateUrl: '../views/linguist.html' },
+            }
+        })
 
         /*
         Computer Programmer Section
@@ -140,6 +146,18 @@ routerApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
                 'intro@natural-scientist': { templateUrl: '../views/intros/natural-scientist-intro.html' },
             }
         })
+        .state('biologist', {
+            url: '/biologist',
+            views: {
+                '': { templateUrl: '../views/biologist.html' },
+            }
+        })
+        .state('botanist', {
+            url: '/botanist',
+            views: {
+                '': { templateUrl: '../views/botanist.html' },
+            }
+        })
 
         /*
         Engineer Section
@@ -149,6 +167,18 @@ routerApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
             views: {
                 '': { templateUrl: '../views/engineer.html' },
                 'intro@engineer': { templateUrl: '../views/intros/engineer-intro.html' },
+            }
+        })
+        .state('affective-engineer', {
+            url: '/affective-engineer',
+            views: {
+                '': { templateUrl: '../views/affective-engineer.html' },
+            }
+        })
+        .state('software-engineer', {
+            url: '/software-engineer',
+            views: {
+                '': { templateUrl: '../views/software-engineer.html' },
             }
         })
 
