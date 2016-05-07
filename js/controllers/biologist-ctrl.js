@@ -31,6 +31,6 @@ nbApp.controller('biologistController', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = allProjects.length || 0; //Two insturments
+      $scope.projectCount = allProjects.length + 1 || 0; //One video
 
     }]);
