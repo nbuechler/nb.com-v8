@@ -1,13 +1,21 @@
 // NOTE: nbApp is defined in app.js
 nbApp.controller('frontEndDeveloperController', ['$scope', '$http',
     function($scope, $http) {
-      // {"name": "", "filepath": "", "t_filepath": ""},
+      // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
+        {"name": "nb.com-v8", "description": "Version 8 because I've made quite a few web pages for myself, and I've lost count ",
+        "bkgd": "programmingBKGD", "color": "info", "link": "nb.com-v8"},
+        {"name": "nathanielbuechler", "description": "My webpage *was* live on http://www.nathanielbuechler.com",
+        "bkgd": "programmingBKGD", "color": "info", "link": "nathanielbuechler"},
+        {"name": "evgroio", "description": "introspective learning tool for educational use",
+        "bkgd": "programmingBKGD", "color": "info", "link": "evgroio"},
+        {"name": "cat-clicker", "description": "Click a picture of a cat and increment",
+        "bkgd": "programmingBKGD", "color": "info", "link": "cat-clicker"},
       ];
 
       $scope.projects = allProjects;
 
-      $scope.selectProject = function(improjectage) {
+      $scope.selectProject = function(project) {
           $scope.selectProject = project;
       };
 

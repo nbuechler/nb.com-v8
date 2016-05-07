@@ -1,13 +1,15 @@
 // NOTE: nbApp is defined in app.js
 nbApp.controller('computerProgrammerController', ['$scope', '$http',
     function($scope, $http) {
-      // {"name": "", "filepath": "", "t_filepath": ""},
+      // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
+        {"name": "javascript-density-scope", "description": "A simple JavaScript application engineered to measure frequency of words in a text body.",
+        "bkgd": "programmingBKGD", "color": "info", "link": "javascript-density-scope"},
       ];
 
       $scope.projects = allProjects;
 
-      $scope.selectProject = function(improjectage) {
+      $scope.selectProject = function(project) {
           $scope.selectProject = project;
       };
 

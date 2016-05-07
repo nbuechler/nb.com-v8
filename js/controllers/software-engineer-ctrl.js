@@ -1,13 +1,23 @@
 // NOTE: nbApp is defined in app.js
 nbApp.controller('softwareEngineerController', ['$scope', '$http',
     function($scope, $http) {
-      // {"name": "", "filepath": "", "t_filepath": ""},
+      // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
+        {"name": "hungry-interceptor", "description": "Intercepts data, does something with it, stores it",
+        "bkgd": "engineeringBKGD", "color": "warning", "link": "hungry-interceptor"},
+        {"name": "fixed-gateway", "description": "a gatway for all the front-end apps ",
+        "bkgd": "engineeringBKGD", "color": "warning", "link": "fixed-gateway"},
+        {"name": "friendly-finder", "description": "finds friends and other friendly fun ideas",
+        "bkgd": "engineeringBKGD", "color": "warning", "link": "friendly-finder"},
+        {"name": "log-grower", "description": "grows logs - based on mean stack boilerplate",
+        "bkgd": "engineeringBKGD", "color": "warning", "link": "log-grower"},
+        {"name": "studious-display", "description": "Displaying studious information and analytics",
+        "bkgd": "engineeringBKGD", "color": "warning", "link": "studious-display"},
       ];
 
       $scope.projects = allProjects;
 
-      $scope.selectProject = function(improjectage) {
+      $scope.selectProject = function(project) {
           $scope.selectProject = project;
       };
 

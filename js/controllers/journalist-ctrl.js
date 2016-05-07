@@ -1,7 +1,7 @@
 // NOTE: nbApp is defined in app.js
 nbApp.controller('journalistController', ['$scope', '$http',
     function($scope, $http) {
-      $scope.default = 'Articles are listed on the left. Select one to read more about the topic.';
+      $scope.default = 'Projects are listed on the left. Select one to read more about the topic.';
       $scope.selectedProject = null;
       $scope.title = 'Journalist Projects';
 
