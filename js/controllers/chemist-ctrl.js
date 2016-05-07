@@ -16,6 +16,7 @@ nbApp.controller('chemistController', ['$scope', '$http',
        */
 
       $scope.skills = [
+  			{"name": "Sciencing", "size": 1},
       ];
 
       var skillString = "";

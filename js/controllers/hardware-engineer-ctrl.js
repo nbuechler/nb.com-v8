@@ -16,6 +16,7 @@ nbApp.controller('hardwareEngineerController', ['$scope', '$http',
        */
 
       $scope.skills = [
+        {"name": "Engineering", "size": 1},
       ];
 
       var skillString = "";

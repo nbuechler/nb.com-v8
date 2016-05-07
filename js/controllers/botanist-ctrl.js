@@ -1,5 +1,5 @@
 // NOTE: nbApp is defined in app.js
-nbApp.controller('Controller', ['$scope', '$http',
+nbApp.controller('botanistController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "filepath": "", "t_filepath": ""},
       var allProjects = [
@@ -16,8 +16,7 @@ nbApp.controller('Controller', ['$scope', '$http',
        */
 
       $scope.skills = [
-        {"name": "Trumpet", "size": 1},
-        {"name": "Cello", "size": 1}
+				{"name": "Sciencing", "size": 1},
       ];
 
       var skillString = "";
@@ -32,6 +31,6 @@ nbApp.controller('Controller', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = allProjects.length + 2 || 0; //Two insturments
+      $scope.projectCount = allProjects.length || 0; //Two insturments
 
     }]);
