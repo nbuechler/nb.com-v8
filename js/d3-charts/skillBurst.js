@@ -135,7 +135,7 @@ var root = {
 						{"name": "Google Charts", "size": 1}
 					]},
 					{
-					"name": "Front-End MVC",
+					"name": "Front-End Abstraction",
 					"size": 1,
 					"children": [
 						{"name": "yeoman.io", "size": 1},
