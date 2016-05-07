@@ -157,6 +157,18 @@ p{
 	opacity: .3;
 }
 
+.roleIcon-lg:hover{
+	opacity: .3;
+}
+
+.roleIcon-border:hover{
+	opacity: .3;
+}
+
+.roleIcon-hex:hover{
+	opacity: .3;
+}
+
 .hextopshift{
 	margin-bottom: -78px;
 	text-align: center;
