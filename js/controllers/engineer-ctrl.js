@@ -1,13 +1,16 @@
 // NOTE: nbApp is defined in app.js
 nbApp.controller('engineerController', ['$scope', '$http',
     function($scope, $http) {
-      // {"name": "", "filepath": "", "t_filepath": ""},
+      // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
+        {"name": "nb.io", "description": "nathanielbuechler.io project - for engineering ec2 instance",
+        "bkgd": "engineeringBKGD", "color": "warning", "link": "nb.io"},
       ];
+
 
       $scope.projects = allProjects;
 
-      $scope.selectProject = function(improjectage) {
+      $scope.selectProject = function(project) {
           $scope.selectProject = project;
       };
 

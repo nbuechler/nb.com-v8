@@ -1,13 +1,17 @@
 // NOTE: nbApp is defined in app.js
 nbApp.controller('backEndDeveloperController', ['$scope', '$http',
     function($scope, $http) {
-      // {"name": "", "filepath": "", "t_filepath": ""},
+      // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
+        {"name": "basic-poll", "description": "Based on Django Tutorial",
+        "bkgd": "programmingBKGD", "color": "info", "link": "basic-poll"},
+        {"name": "ideo-quest", "description": "a quest into learning about ideology",
+        "bkgd": "programmingBKGD", "color": "info", "link": "ideo-quest"},
       ];
 
       $scope.projects = allProjects;
 
-      $scope.selectProject = function(improjectage) {
+      $scope.selectProject = function(project) {
           $scope.selectProject = project;
       };
 
