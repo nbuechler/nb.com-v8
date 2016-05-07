@@ -1,5 +1,5 @@
 // NOTE: nbApp is defined in app.js
-nbApp.controller('Controller', ['$scope', '$http',
+nbApp.controller('computerProgrammerController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "filepath": "", "t_filepath": ""},
       var allProjects = [
@@ -29,6 +29,11 @@ nbApp.controller('Controller', ['$scope', '$http',
         {"name": "SVN", "size": 1},
         {"name": "Apache", "size": 1},
         {"name": "VirtualBox", "size": 1},
+        {"name": "CSV", "size": 1},
+        {"name": "TSV", "size": 1},
+        {"name": "JSON", "size": 1},
+        {"name": "BSON", "size": 1},
+        {"name": "XML", "size": 1},
       ];
 
       var skillString = "";

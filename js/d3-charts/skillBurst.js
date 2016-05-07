@@ -118,6 +118,17 @@ var root = {
 						{"name": "VirtualBox", "size": 1},
 						]
 					},
+					{
+					"name": "Data Formats",
+					"size": 1,
+					"children": [
+						{"name": "CSV", "size": 1},
+						{"name": "TSV", "size": 1},
+						{"name": "JSON", "size": 1},
+						{"name": "BSON", "size": 1},
+						{"name": "XML", "size": 1}
+					]
+					},
 					]
 				},
 				{
@@ -173,17 +184,6 @@ var root = {
 						{"name": "WordPress", "size": 1},
 						{"name": "Joomla", "size": 1},
 						{"name": "phpBB", "size": 1}
-					]
-					},
-					{
-					"name": "Data Formats",
-					"size": 1,
-					"children": [
-						{"name": "CSV", "size": 1},
-						{"name": "TSV", "size": 1},
-						{"name": "JSON", "size": 1},
-						{"name": "BSON", "size": 1},
-						{"name": "XML", "size": 1}
 					]
 					},
 					{"name": "Bootstrap", "size": 1},

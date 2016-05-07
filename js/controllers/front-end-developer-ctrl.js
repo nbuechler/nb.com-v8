@@ -1,5 +1,5 @@
 // NOTE: nbApp is defined in app.js
-nbApp.controller('Controller', ['$scope', '$http',
+nbApp.controller('frontEndDeveloperController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "filepath": "", "t_filepath": ""},
       var allProjects = [
@@ -42,7 +42,11 @@ nbApp.controller('Controller', ['$scope', '$http',
         {"name": "webpack", "size": 1},
         {"name": "jQuery UI", "size": 1},
         {"name": "jQuery Mobile", "size": 1},
-        
+        {"name": "WordPress", "size": 1},
+        {"name": "Joomla", "size": 1},
+        {"name": "phpBB", "size": 1},
+        {"name": "Bootstrap", "size": 1},
+        {"name": "AJAX", "size": 1},
       ];
 
       var skillString = "";
@@ -57,6 +61,6 @@ nbApp.controller('Controller', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = allProjects.length + 2 || 0; //Two insturments
+      $scope.projectCount = allProjects.length || 0; //Two insturments
 
     }]);

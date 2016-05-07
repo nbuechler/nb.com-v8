@@ -1,5 +1,5 @@
 // NOTE: nbApp is defined in app.js
-nbApp.controller('Controller', ['$scope', '$http',
+nbApp.controller('backEndDeveloperController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "filepath": "", "t_filepath": ""},
       var allProjects = [
@@ -16,8 +16,38 @@ nbApp.controller('Controller', ['$scope', '$http',
        */
 
       $scope.skills = [
-        {"name": "Trumpet", "size": 1},
-        {"name": "Cello", "size": 1}
+				{"name": "PHP", "size": 1},
+        {"name": "Flask", "size": 1},
+        {"name": "Tornado", "size": 1},
+        {"name": "Django", "size": 1},
+        {"name": "pip", "size": 1},
+        {"name": "Groovy", "size": 1},
+        {"name": "Grails", "size": 1},
+        {"name": "GSP", "size": 1},
+        {"name": "Gradle", "size": 1},
+        {"name": "Spock", "size": 1},
+        {"name": "Java", "size": 1},
+        {"name": "JSP", "size": 1},
+        {"name": "JUnit", "size": 1},
+        {"name": "Maven", "size": 1},
+        {"name": "Ant", "size": 1},
+        {"name": "Spring Framework", "size": 1},
+        {"name": "Spring MVC", "size": 1},
+        {"name": "Spring Security", "size": 1},
+        {"name": "SpringSource TC Server", "size": 1},
+        {"name": "Thymeleaf", "size": 1},
+        {"name": "MySQL", "size": 1},
+        {"name": "Oracle", "size": 1},
+        {"name": "HQL", "size": 1},
+        {"name": "SQL", "size": 1},
+        {"name": "Hibernate", "size": 1},
+        {"name": "Mongo DB", "size": 1},
+        {"name": "Neo4j", "size": 1},
+        {"name": "Travis CI", "size": 1},
+        {"name": "AWS", "size": 1},
+        {"name": "Heroku", "size": 1},
+        {"name": "TeamCity", "size": 1},
+        {"name": "Sonarqube", "size": 1},
       ];
 
       var skillString = "";
@@ -32,6 +62,6 @@ nbApp.controller('Controller', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = allProjects.length + 2 || 0; //Two insturments
+      $scope.projectCount = allProjects.length || 0; //Two insturments
 
     }]);
