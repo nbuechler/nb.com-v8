@@ -275,6 +275,9 @@ var root = {
 				"color": "#296A52",
 				"children": [
 					{"name": "Sciencing", "size": 1},
+					{"name": "Observing", "size": 1},
+					{"name": "Documenting", "size": 1},
+					{"name": "Sharing", "size": 1},
 					]
 				},
 				{
@@ -302,6 +305,9 @@ var root = {
 				"color": "#775923",
 				"children": [
 					{"name": "Engineering", "size": 1},
+					{"name": "Critical Thinking", "size": 1},
+					{"name": "Decision Making", "size": 1},
+					{"name": "Time Management", "size": 1},
 					]
 				},
 				{

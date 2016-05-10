@@ -17,6 +17,9 @@ nbApp.controller('naturalScientistController', ['$scope', '$http',
 
       $scope.skills = [
 				{"name": "Sciencing", "size": 1},
+        {"name": "Observing", "size": 1},
+        {"name": "Documenting", "size": 1},
+        {"name": "Sharing", "size": 1},
       ];
 
       var skillString = "";
