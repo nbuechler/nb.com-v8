@@ -20,6 +20,9 @@ nbApp.controller('engineerController', ['$scope', '$http',
 
       $scope.skills = [
         {"name": "Engineering", "size": 1},
+        {"name": "Critical Thinking", "size": 1},
+        {"name": "Decision Making", "size": 1},
+        {"name": "Time Management", "size": 1},
       ];
 
       var skillString = "";
