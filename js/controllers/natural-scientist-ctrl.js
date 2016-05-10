@@ -34,6 +34,6 @@ nbApp.controller('naturalScientistController', ['$scope', '$http',
 
       $scope.skillString = skillString;
 
-      $scope.projectCount = allProjects.length || 0; //Two insturments
+      $scope.projectCount = allProjects.length + 1|| 0; //For ongoing Research
 
     }]);
