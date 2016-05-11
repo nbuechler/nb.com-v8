@@ -31,37 +31,29 @@
   </div>
 </div>
 
-<div class="row" ng-controller="linguistController">
-  <div class="allLanguages"><div>
-</div>
 
 <div class="row" ng-controller="linguistController">
   <statistics-container-directive></statistics-container-directive>
 </div>
 
+
+<!--
+ * 0 - No Practical Proficiency
+ * 1 - Elementary Proficiency
+ * 2 - Limited Working Proficiency
+ * 3 - Minimum Professional Proficiency
+ * 4 - Full Professional Proficiency
+ * 5 - Native or Bilingual Proficiency
+   Read: the ability to read and understand texts written in the language
+   Write: the ability to formulate written texts in the language
+   Listen: the ability to follow and understand speech in the language
+   Speak: the ability to produce speech in the language and be understood by its speakers.
+  -->
+
+<language-container-directive color="primary" language="french" reading="2" writing="1" listening="3" speaking="1"></language-container-directive>
+<language-container-directive color="primary" language="spanish" reading="3" writing="2" listening="4" speaking="3"></language-container-directive>
+
 <social-scientist-nav-directive></social-scientist-nav-directive>
-
-
-<style>
-.radar-chart .area {
-  fill-opacity: 0.7;
-}
-.radar-chart.focus .area {
-  fill-opacity: 0.3;
-}
-.radar-chart.focus .area.focused {
-  fill-opacity: 0.9;
-}
-.area.german, .german .circle {
-  fill: #FFD700;
-  stroke: none;
-}
-.area.argentina, .argentina .circle {
-  fill: #ADD8E6;
-  stroke: none;
-}
-</style>
-
 
 <!--d3, application JavaScript Files-->
 <script type="text/javascript" src="js/d3-charts/linguisticRadar.js"></script>
