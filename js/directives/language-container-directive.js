@@ -9,7 +9,8 @@ nbApp.directive("languageContainerDirective", function() {
           reading: "@",
           writing: "@",
           listening: "@",
-          speaking: "@"
+          speaking: "@",
+          flag: "@",
         },
         link: function(scope, element, attrs) {
           scope.color = attrs.color;
@@ -18,13 +19,14 @@ nbApp.directive("languageContainerDirective", function() {
           scope.writing = attrs.writing;
           scope.listening = attrs.listening;
           scope.speaking = attrs.speaking;
+          scope.flag = attrs.flag;
 
           scope.$watch('language', function(nV, oV) {
             if(nV){
                 RadarChart.defaultConfig.color = function() {};
                 RadarChart.defaultConfig.radius = 3;
-                RadarChart.defaultConfig.w = 200;
-                RadarChart.defaultConfig.h = 200;
+                RadarChart.defaultConfig.w = 250;
+                RadarChart.defaultConfig.h = 250;
 
                 /*
                  * 0 - No Practical Proficiency
@@ -63,8 +65,8 @@ nbApp.directive("languageContainerDirective", function() {
                 var chart = RadarChart.chart();
                 var cfg = chart.config(); // retrieve default config
                 var svg = d3.select('.' + attrs.language).append('svg')
-                  .attr('width', cfg.w + cfg.w + 50)
-                  .attr('height', cfg.h + cfg.h / 4);
+                  .attr('width', cfg.w)
+                  .attr('height', cfg.h);
                 svg.append('g').classed('single', 1).datum(mapData()).call(chart);
 
                 // many radars
