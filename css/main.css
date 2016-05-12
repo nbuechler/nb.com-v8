@@ -229,78 +229,74 @@ p{
   fill-opacity: 0.9;
 }
 .area.English, .English .circle {
-  fill: #FFD700;
+  fill: darkBlue;
   stroke: none;
 }
 .area.German, .German .circle {
-  fill: #FFD700;
+  fill: dimGray;
   stroke: none;
 }
 .area.Spanish, .Spanish .circle {
-  fill: #FFD700;
+  fill: darkRed;
   stroke: none;
 }
 .area.Italian, .Italian .circle {
-  fill: #FFD700;
+  fill: green;
   stroke: none;
 }
 .area.French, .French .circle {
-  fill: #FFD700;
+  fill: lightBlue;
   stroke: none;
 }
 .area.Swedish, .Swedish .circle {
-  fill: #FFD700;
+  fill: dodgerBlue;
   stroke: none;
 }
 .area.Russian, .Russian .circle {
-  fill: #FFD700;
+  fill: goldenRod;
   stroke: none;
 }
 .area.Portuguese, .Portuguese .circle {
-  fill: #FFD700;
+  fill: greenYellow;
   stroke: none;
 }
 .area.Turkish, .Turkish .circle {
-  fill: #FFD700;
+  fill: red;
   stroke: none;
 }
 .area.Irish, .Irish .circle {
-  fill: #FFD700;
+  fill: lightSalmon;
   stroke: none;
 }
 .area.Norwegian, .Norwegian .circle {
-  fill: #FFD700;
+  fill: mediumTurquoise;
   stroke: none;
 }
 .area.Ukrainian, .Ukrainian .circle {
-  fill: #FFD700;
+  fill: orange;
   stroke: none;
 }
 .area.Danish, .Danish .circle {
-  fill: #FFD700;
+  fill: indianRed;
   stroke: none;
 }
 .area.Dutch, .Dutch .circle {
-  fill: #FFD700;
+  fill: blue;
   stroke: none;
 }
 .area.Polish, .Polish .circle {
-  fill: #FFD700;
+  fill: maroon;
   stroke: none;
 }
 .area.Welsh, .Welsh .circle {
-  fill: #FFD700;
+  fill: limeGreen;
   stroke: none;
 }
 .area.Esperanto, .Esperanto .circle {
-  fill: #FFD700;
+  fill: mediumAquaMarine;
   stroke: none;
 }
 .area.Catalán, .Catalán .circle {
-  fill: #FFD700;
-  stroke: none;
-}
-.area.  , .   .circle {
-  fill: #FFD700;
+  fill: orangeRed;
   stroke: none;
 }
