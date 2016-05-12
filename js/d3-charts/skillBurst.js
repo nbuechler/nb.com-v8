@@ -360,9 +360,9 @@ var root = {
 					{"name": "Ukrainian", "size": 1},
 					{"name": "Dutch", "size": 1},
 					{"name": "Polish", "size": 1},
-					{"name": "Catalan", "size": 1},
+					{"name": "Catalán", "size": 1},
 					{"name": "Welsh", "size": 1},
-					{"name": "Esperanza", "size": 1},
+					{"name": "Esperanto", "size": 1},
 					]
 				},
 				{
