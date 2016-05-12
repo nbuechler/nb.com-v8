@@ -228,7 +228,75 @@ p{
 .radar-chart.focus .area.focused {
   fill-opacity: 0.9;
 }
-.area.german, .german .circle {
-  fill: #FFD700;
+.area.English, .English .circle {
+  fill: darkBlue;
+  stroke: none;
+}
+.area.German, .German .circle {
+  fill: dimGray;
+  stroke: none;
+}
+.area.Spanish, .Spanish .circle {
+  fill: darkRed;
+  stroke: none;
+}
+.area.Italian, .Italian .circle {
+  fill: green;
+  stroke: none;
+}
+.area.French, .French .circle {
+  fill: lightBlue;
+  stroke: none;
+}
+.area.Swedish, .Swedish .circle {
+  fill: dodgerBlue;
+  stroke: none;
+}
+.area.Russian, .Russian .circle {
+  fill: goldenRod;
+  stroke: none;
+}
+.area.Portuguese, .Portuguese .circle {
+  fill: greenYellow;
+  stroke: none;
+}
+.area.Turkish, .Turkish .circle {
+  fill: red;
+  stroke: none;
+}
+.area.Irish, .Irish .circle {
+  fill: lightSalmon;
+  stroke: none;
+}
+.area.Norwegian, .Norwegian .circle {
+  fill: mediumTurquoise;
+  stroke: none;
+}
+.area.Ukrainian, .Ukrainian .circle {
+  fill: orange;
+  stroke: none;
+}
+.area.Danish, .Danish .circle {
+  fill: indianRed;
+  stroke: none;
+}
+.area.Dutch, .Dutch .circle {
+  fill: blue;
+  stroke: none;
+}
+.area.Polish, .Polish .circle {
+  fill: maroon;
+  stroke: none;
+}
+.area.Welsh, .Welsh .circle {
+  fill: limeGreen;
+  stroke: none;
+}
+.area.Esperanto, .Esperanto .circle {
+  fill: mediumAquaMarine;
+  stroke: none;
+}
+.area.Catalán, .Catalán .circle {
+  fill: orangeRed;
   stroke: none;
 }

@@ -9,7 +9,8 @@ nbApp.directive("languageContainerDirective", function() {
           reading: "@",
           writing: "@",
           listening: "@",
-          speaking: "@"
+          speaking: "@",
+          flag: "@",
         },
         link: function(scope, element, attrs) {
           scope.color = attrs.color;
@@ -18,13 +19,14 @@ nbApp.directive("languageContainerDirective", function() {
           scope.writing = attrs.writing;
           scope.listening = attrs.listening;
           scope.speaking = attrs.speaking;
+          scope.flag = attrs.flag;
 
           scope.$watch('language', function(nV, oV) {
             if(nV){
                 RadarChart.defaultConfig.color = function() {};
                 RadarChart.defaultConfig.radius = 3;
-                RadarChart.defaultConfig.w = 200;
-                RadarChart.defaultConfig.h = 200;
+                RadarChart.defaultConfig.w = 250;
+                RadarChart.defaultConfig.h = 250;
 
                 /*
                  * 0 - No Practical Proficiency
@@ -60,16 +62,21 @@ nbApp.directive("languageContainerDirective", function() {
                   });
                 }
 
+                // chart.config.w;
+                // chart.config.h;
+                // chart.config.axisText = true;
+                // chart.config.levels = 5;
+                // chart.config.maxValue = 5;
+                // chart.config.circles = true;
+                // chart.config.actorLegend = 1;
+
                 var chart = RadarChart.chart();
                 var cfg = chart.config(); // retrieve default config
+                    cfg = chart.config({axisText: true, levels: 5, maxValue: 5, circles: true}); // retrieve default config
                 var svg = d3.select('.' + attrs.language).append('svg')
-                  .attr('width', cfg.w + cfg.w + 50)
-                  .attr('height', cfg.h + cfg.h / 4);
+                  .attr('width', 250)
+                  .attr('height', 270);
                 svg.append('g').classed('single', 1).datum(mapData()).call(chart);
-
-                // many radars
-                chart.config({w: cfg.w / 4, h: cfg.h / 4, axisText: false, levels: 0, circles: true});
-                cfg = chart.config();
 
                 console.log('Rendering new language Radar Viz! --> ' + attrs.language);
             }
