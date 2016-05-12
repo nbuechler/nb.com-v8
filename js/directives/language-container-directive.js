@@ -62,16 +62,21 @@ nbApp.directive("languageContainerDirective", function() {
                   });
                 }
 
+                // chart.config.w;
+                // chart.config.h;
+                // chart.config.axisText = true;
+                // chart.config.levels = 5;
+                // chart.config.maxValue = 5;
+                // chart.config.circles = true;
+                // chart.config.actorLegend = 1;
+
                 var chart = RadarChart.chart();
                 var cfg = chart.config(); // retrieve default config
+                    cfg = chart.config({axisText: true, levels: 5, maxValue: 5, circles: true}); // retrieve default config
                 var svg = d3.select('.' + attrs.language).append('svg')
-                  .attr('width', cfg.w)
-                  .attr('height', cfg.h);
+                  .attr('width', 250)
+                  .attr('height', 270);
                 svg.append('g').classed('single', 1).datum(mapData()).call(chart);
-
-                // many radars
-                chart.config({w: cfg.w / 4, h: cfg.h / 4, axisText: false, levels: 0, circles: true});
-                cfg = chart.config();
 
                 console.log('Rendering new language Radar Viz! --> ' + attrs.language);
             }
