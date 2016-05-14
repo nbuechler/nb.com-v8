@@ -4,8 +4,113 @@
   <statistics-container-directive></statistics-container-directive>
 </div>
 
+<div class="row jumbotron programmingBKGD">
+  <div class="container">
+    <div class="col-xs-12">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          Programming Skills
+        </div>
+        <div class="panel-body" style="text-align: center;">
+          Skills are rated with a combined max value of 50 where each skill is scored relative to each another. It is impossible to fill the entire area of the radar chart, but any skew in area represents a relatively greater expertise in that domain.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel panel-info">
+        <div class="panel-body">
+          <div class="well col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+            <div class="programming">
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer" style="text-align: center;">
+          <hr></hr>
+          <p class="well">
+            UI/UX: 7 </br>
+            HTML/CSS: 8 </br>
+            JavaScript: 8 </br>
+            Microservices: 5 </br>
+            DevOps: 5 </br>
+            Databases: 5 </br>
+            IoT: 1 </br>
+            Affective Computing: 3 </br>
+            Machine Learning: 1 </br>
+            Python: 7 </br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row" ng-controller="computerProgrammerController">
   <coding-container-directive></coding-container-directive>
 </div>
 
 <computer-programmer-nav-directive></computer-programmer-nav-directive>
+
+<script>
+
+RadarChart.defaultConfig.color = function() {};
+RadarChart.defaultConfig.radius = 3;
+RadarChart.defaultConfig.w = 350;
+RadarChart.defaultConfig.h = 350;
+
+var data = [
+  {
+    className: 'Front-End', // optional can be used for styling
+    axes: [
+      {axis: "UI/UX", value: 7},
+      {axis: "HTML/CSS", value: 8},
+      {axis: "JavaScript", value: 8},
+      {axis: "Microservices", value: 5},
+      {axis: "DevOps", value: 0},
+      {axis: "Databases", value: 0},
+      {axis: "IoT", value: 0},
+      {axis: "Affective Computing", value: 0},
+      {axis: "Machine Learning", value: 0},
+      {axis: "Python", value: 7},
+    ]
+  },
+  {
+    className: 'Back-End', // optional can be used for styling
+    axes: [
+      {axis: "UI/UX", value: 0},
+      {axis: "HTML/CSS", value: 0},
+      {axis: "JavaScript", value: 0},
+      {axis: "Microservices", value: 5},
+      {axis: "DevOps", value: 5},
+      {axis: "Databases", value: 5},
+      {axis: "IoT", value: 1},
+      {axis: "Affective Computing", value: 3},
+      {axis: "Machine Learning", value: 1},
+      {axis: "Python", value: 7},
+    ]
+  },
+];
+function mapData() {
+  return data.map(function(d) {
+    return {
+      className: d.className,
+      axes: d.axes.map(function(axis) {
+        return {axis: axis.axis, value: axis.value};
+      })
+    };
+  });
+}
+
+var chart = RadarChart.chart();
+var cfg = chart.config(); // retrieve default config
+    cfg = chart.config({axisText: true, levels: 4, maxValue: 8, circles: true}); // retrieve default config
+var svg = d3.select('.' + 'programming').append('svg')
+  .attr('width', 350)
+  .attr('height', 370);
+svg.append('g').classed('single', 1).datum(mapData()).call(chart);
+
+</script>
