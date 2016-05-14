@@ -21,6 +21,7 @@ nbApp.controller('backEndDeveloperController', ['$scope', '$http',
 
       $scope.skills = [
 				{"name": "PHP", "size": 1},
+        {"name": "Python", "size": 1},
         {"name": "Flask", "size": 1},
         {"name": "Tornado", "size": 1},
         {"name": "Django", "size": 1},
@@ -52,6 +53,12 @@ nbApp.controller('backEndDeveloperController', ['$scope', '$http',
         {"name": "Heroku", "size": 1},
         {"name": "TeamCity", "size": 1},
         {"name": "Sonarqube", "size": 1},
+        {"name": "Machine Learning", "size": 1},
+        {"name": "Affective Computing", "size": 1},
+        {"name": "IoT", "size": 1},
+        {"name": "Databases", "size": 1},
+        {"name": "DevOps", "size": 1},
+        {"name": "Microservices", "size": 1},
       ];
 
       var skillString = "";

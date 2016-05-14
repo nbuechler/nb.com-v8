@@ -24,6 +24,9 @@ nbApp.controller('frontEndDeveloperController', ['$scope', '$http',
        */
 
       $scope.skills = [
+        {"name": "HTML/XHTML/HTML5", "size": 1},
+        {"name": "CSS/CSS2/CSS3", "size": 1},
+        {"name": "JavaScript (ES5/ES6)", "size": 1},
         {"name": "D3.js", "size": 1},
         {"name": "dc.js", "size": 1},
         {"name": "crossfilter.js", "size": 1},

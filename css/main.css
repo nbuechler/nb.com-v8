@@ -296,7 +296,12 @@ p{
   fill: mediumAquaMarine;
   stroke: none;
 }
-.area.Catalán, .Catalán .circle {
-  fill: orangeRed;
+.area.Front-End, .Ffront-End .circle {
+  fill: #31252F;
+  stroke: none;
+}
+
+.area.Back-End, .Back-End .circle {
+  fill: #726E7D;
   stroke: none;
 }

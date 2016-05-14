@@ -18,9 +18,6 @@ nbApp.controller('computerProgrammerController', ['$scope', '$http',
        */
 
       $scope.skills = [
-        {"name": "HTML/XHTML/HTML5", "size": 1},
-        {"name": "CSS/CSS2/CSS3", "size": 1},
-        {"name": "JavaScript (ES5/ES6)", "size": 1},
         {"name": "Atom.io", "size": 1},
         {"name": "Brackets.io", "size": 1},
         {"name": "Notepad++", "size": 1},
