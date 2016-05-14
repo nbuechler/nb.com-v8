@@ -186,6 +186,9 @@ var root = {
 						{"name": "phpBB", "size": 1}
 					]
 					},
+					{"name": "HTML/XHTML/HTML5", "size": 1},
+	        {"name": "CSS/CSS2/CSS3", "size": 1},
+	        {"name": "JavaScript (ES5/ES6)", "size": 1},
 					{"name": "Bootstrap", "size": 1},
 					{"name": "AJAX", "size": 1}
 				]
@@ -199,6 +202,7 @@ var root = {
 					"name": "Python",
 					"size": 1,
 					"children": [
+						{"name": "Python", "size": 1},
 						{"name": "Flask", "size": 1},
 						{"name": "Tornado", "size": 1},
 						{"name": "Django", "size": 1},
@@ -242,6 +246,7 @@ var root = {
 					"name": "Databases",
 					"size": 1,
 					"children": [
+						{"name": "Databases", "size": 1},
 						{"name": "MySQL", "size": 1},
 						{"name": "Oracle", "size": 1},
 						{"name": "HQL", "size": 1},
@@ -255,13 +260,18 @@ var root = {
 					"name": "DevOps",
 					"size": 1,
 					"children": [
+						{"name": "DevOps", "size": 1},
 						{"name": "Travis CI", "size": 1},
 						{"name": "AWS", "size": 1},
 						{"name": "Heroku", "size": 1},
 						{"name": "TeamCity", "size": 1},
 						{"name": "Sonarqube", "size": 1},
 					]
-					}
+				},
+				{"name": "Machine Learning", "size": 1},
+        {"name": "Affective Computing", "size": 1},
+        {"name": "IoT", "size": 1},
+        {"name": "Microservices", "size": 1},
 				]
 				}
 			]
