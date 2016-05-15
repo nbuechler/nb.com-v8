@@ -26,3 +26,5 @@ JSON objects within the application are used as the data, and it can eventually 
 
 #Features?
 Addition of my videos, pictures, articles, and other ideas...all copylefted.
+
+Also, visualizations, and sweet js code...also copylefted.
