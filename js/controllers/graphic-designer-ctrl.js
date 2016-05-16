@@ -3,12 +3,18 @@ nbApp.controller('graphicDesignerController', ['$scope', '$http',
     function($scope, $http) {
       $scope.default = 'Images are shown below. Select one to see the image.';
       $scope.selectedProject = null;
-      $scope.title = 'Graphic Designer Projects';
+      $scope.title = 'Graphic Design Projects';
 
       var rootPath = '../content/roles/graphicDesigner/WR/';
       var tRootPath = '../content/roles/graphicDesigner/T/';
       // {"name": "", "filepath": "", "t_filepath": ""},
       var graphicDesignerImages = [
+        {"name": "", "filepath": rootPath + "omegahorizon-logo-01-bw.png", "t_filepath": rootPath + "omegahorizon-logo-01-bw.png"},
+        {"name": "", "filepath": rootPath + "omegahorizon-logo-01-blue-221D5B.png", "t_filepath": rootPath + "omegahorizon-logo-01-blue-221D5B.png"},
+        {"name": "", "filepath": rootPath + "omegahorizon-logo-01-purple-411D4F.png", "t_filepath": rootPath + "omegahorizon-logo-01-purple-411D4F.png"},
+        {"name": "", "filepath": rootPath + "omegahorizon-logo-01-bw-no-txt.png", "t_filepath": rootPath + "omegahorizon-logo-01-bw-no-txt.png"},
+        {"name": "", "filepath": rootPath + "omegahorizon-logo-01-blue-221D5B-no-txt.png", "t_filepath": rootPath + "omegahorizon-logo-01-blue-221D5B-no-txt.png"},
+        {"name": "", "filepath": rootPath + "omegahorizon-logo-01-purple-411D4F-no-txt.png", "t_filepath": rootPath + "omegahorizon-logo-01-purple-411D4F-no-txt.png"},
         {"name": "", "filepath": rootPath + "Logovfinal-mark-bw-1.jpg", "t_filepath": tRootPath + "Logovfinal-mark-bw-1.jpg"},
         {"name": "", "filepath": rootPath + "Logovfinal-mark-color-1.jpg", "t_filepath": tRootPath + "Logovfinal-mark-color-1.jpg"},
         {"name": "", "filepath": rootPath + "Logovfinal-mark-bw-2.jpg", "t_filepath": tRootPath + "Logovfinal-mark-bw-2.jpg"},
