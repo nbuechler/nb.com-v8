@@ -11,3 +11,9 @@ nbApp.directive("imageSocialContainerDirective", function() {
         templateUrl : 'js/templates/image-social-container.html'
     };
 });
+nbApp.directive("imageScientistContainerDirective", function() {
+    return {
+        restrict : 'E',
+        templateUrl : 'js/templates/image-scientist-container.html'
+    };
+});
