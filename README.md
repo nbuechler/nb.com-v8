@@ -17,7 +17,8 @@ python -m SimpleHTTPServer
 
 Now, go to localhost:8000 in your browser and the page will show
 
-
+#Fonts used for icons
+Just as a note, the fonts used for the icons are arial and courier (I think)... you're smart. ;-)
 
 #Other notes:
 This project is made with Angular.js (1 not 2) and has no back-end so that it can run in a very cost effective way.
