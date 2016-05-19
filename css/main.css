@@ -7,11 +7,26 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
-/* Hide sceondary nave from mobile*/
+/* Hide sceondary nav from mobile*/
 
 @media only screen and (max-width: 767px) {
     .secondary-navbar {
         display: none;
+    }
+}
+
+/* Make role icons work for mobile*/
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-device-width: 500px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
     }
 }
 
@@ -103,14 +118,19 @@ p{
 	color: white;
 	}
 
-#roleBar{
+#roleBarMobile{
+	padding-top: 56px;
+	bottom: 48px;
+	}
+
+#roleBarDesktop{
 	padding-top: 56px;
 	bottom: 48px;
 	}
 
 .canvasHolderBkgd{
 	background-color: #D3D3D3;
-  overflow-x: scroll;
+  overflow-x: auto;
 
 	}
 

@@ -113,7 +113,7 @@ var svg = d3.select("#roleChart").append("svg")
       .attr("x", function(d, i) { return x(d.startDate); })
       .attr("width", function(d, i) { return x(d.endDate) - x(d.startDate); })
       .attr("y", function(d, i) { return (height / roleData.length) * i; })
-      .attr("height", function(d, i) { return (height / roleData.length) - 10; })
+      .attr("height", function(d, i) { return (height / roleData.length) - 5; })
 	  .attr("fill", function(d) {
 		  return d.color;
 		  })
