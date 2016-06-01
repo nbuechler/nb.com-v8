@@ -53,7 +53,7 @@ var roleData = [
 
 var margin = {top: 60, right: 40, bottom: 30, left: 50},
     width = 780 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 414 - margin.top - margin.bottom;
 
 var x = d3.scale.linear()
     .range([0, width])
