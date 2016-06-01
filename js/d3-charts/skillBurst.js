@@ -467,7 +467,7 @@ var root = {
 
 
 var sunWidth = 780,
-    sunHeight = 390,
+    sunHeight = 404,
     radius = Math.min(sunWidth, sunHeight) / 2;
 
 var x = d3.scale.linear()
