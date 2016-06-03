@@ -19,7 +19,7 @@ nbApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
             }
         })
 
-        state('secret', {
+        .state('secret', {
             url: '/secret',
             views: {
                 '': { templateUrl: '../views/secret-page.html' }
