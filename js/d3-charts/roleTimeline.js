@@ -104,11 +104,6 @@ function drawGraph(w, abm, mobile) {
 			svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
-	      .call(xAxisMobile);
-
-			svg.append("g")
-	      .attr("class", "x axis")
-	      .attr("transform", "translate(0," + height + ")")
 	      .call(xAxisMobile)
 			.selectAll("text")
 				.attr("y", 8)
@@ -125,11 +120,6 @@ function drawGraph(w, abm, mobile) {
 				.style("font-size", "10px")
 				.html("(Click over bar to see role info, then scroll up.)");
 		} else {
-			svg.append("g")
-	      .attr("class", "x axis")
-	      .attr("transform", "translate(0," + height + ")")
-	      .call(xAxis);
-
 			svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
