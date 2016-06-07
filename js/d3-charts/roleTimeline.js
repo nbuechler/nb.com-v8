@@ -50,67 +50,93 @@ var roleData = [
 		"endDate" : currentYear, "color": "#796950", "fileName" : "src='images/web-rdy_icons/affective-engineer.jpg'"},
 ]
 
+var margin;
+var width;
+var height;
+
 function drawGraph(w, abm, mobile) {
 
-	var margin = {top: 60, right: 40, bottom: 30 + abm, left: 50},
-	    width = w - margin.left - margin.right,
-	    height = h - margin.top - margin.bottom;
+	margin = {top: 60, right: 40, bottom: 30 + abm, left: 50};
+  width = w - margin.left - margin.right;
+	height = 414 - margin.top - margin.bottom;
 
 	var x = d3.scale.linear()
 	    .range([0, width])
-		.domain([d3.min(roleData, function(d) { return d.startDate; }), d3.max(roleData, function(d) { return d.endDate; })]);
+			.domain([d3.min(roleData, function(d) { return d.startDate; }), d3.max(roleData, function(d) { return d.endDate; })]);
 
 	var y = d3.scale.linear()
 	    .range([height, 0])
-		.domain([0, height]);
+			.domain([0, height]);
+
+	var xAxis = d3.svg.axis()
+			.scale(x)
+			.orient("bottom")
+			.ticks(currentYear - earlyYear)
+			.tickFormat(function(d) { return ("'" + d.toString().substring(2,4)); })
 
 	var xAxis = d3.svg.axis()
 	    .scale(x)
 	    .orient("bottom")
-		.ticks(currentYear - earlyYear)
-		.tickFormat(function(d) { return (d); });;
+			.ticks(currentYear - earlyYear)
+			.tickFormat(function(d) { return ("'" + d.toString().substring(2,4)); })
 
 	var yAxis = d3.svg.axis()
 	    .scale(y)
 	    .orient("left")
-		.ticks(0)
-		.tickFormat(function(d,i) { return ("Role " + parseInt(i + 1)); });
+			.ticks(0)
+			.tickFormat(function(d,i) { return ("Role " + parseInt(i + 1)); });
 
 	var svg = d3.select("#roleChart").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
-	  .append("g")
+		  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
 	  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+	  svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .text("Roles Developed");
+
+    if(mobile){
+			svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis)
+			.selectAll("text")
+				.attr("y", 8)
+				.attr("x", -8)
+				.attr("dy", ".35em")
+				.attr("transform", "rotate(-60)")
+				.style("text-anchor", "end");
+
+			svg.append("text")
+				.attr("y", -10)
+				.attr("x", 25)
+				.attr("dx", ".00em")
+				.style("text-anchor", "")
+				.style("font-size", "10px")
+				.html("(Click over bar to see role info)");
+		} else {
+			svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
 	      .call(xAxis);
 
-	  svg.append("text")
-	        .attr("x", (width / 2))
-	        .attr("y", 0 - (margin.top / 2))
-	        .attr("text-anchor", "middle")
-	        .style("font-size", "16px")
-	        .text("Roles Developed");
-
-    if(mobile){
 			svg.append("text")
-						.attr("y", -10)
-						.attr("x", 25)
-						.attr("dx", ".00em")
-						.style("text-anchor", "")
-						.style("font-size", "10px")
-						.html("(Click over bar to see role info)");
-		} else {
-			svg.append("text")
-						.attr("y", 57)
-						.attr("x", 10)
-						.attr("dx", ".00em")
-						.style("text-anchor", "")
-						.style("font-size", "10px")
-						.html("(Hover over bar to see role info)");
+				.attr("y", 57)
+				.attr("x", 10)
+				.attr("dx", ".00em")
+				.style("text-anchor", "")
+				.style("font-size", "10px")
+				.html("(Hover over bar to see role info)");
 		}
 
 	  svg.append("g")
@@ -121,13 +147,13 @@ function drawGraph(w, abm, mobile) {
 	      .data(roleData)
 	    .enter().append("rect")
 	      .attr("class", "bar")
-		  .attr("id" , function(d, i) { return y(i); })
+			  .attr("id" , function(d, i) { return y(i); })
 	      .attr("x", function(d, i) { return x(d.startDate); })
 	      .attr("width", function(d, i) { return x(d.endDate) - x(d.startDate); })
 	      .attr("y", function(d, i) { return (height / roleData.length) * i; })
 	      .attr("height", function(d, i) { return (height / roleData.length) - 5; })
-		  .attr("fill", function(d) {
-			  return d.color;
+			  .attr("fill", function(d) {
+				  return d.color;
 			  })
 		  .on("mouseenter", function(d) {
 			  d3.select(this).attr("fill", "darkGray");
