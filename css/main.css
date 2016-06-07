@@ -21,6 +21,12 @@
   display: none;
 }
 
+@media only screen and (min-device-width: 500px) {
+    .scrollBarHack {
+      margin-right: 15px;
+    }
+}
+
 @media only screen and (max-device-width: 500px) {
     .desktop {
       display: none;

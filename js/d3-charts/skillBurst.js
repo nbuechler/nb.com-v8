@@ -465,68 +465,48 @@ var root = {
 }
 
 
+function drawSunGraph(w, da, mobile) {
 
-var sunWidth = 780,
-    sunHeight = 404,
-    radius = Math.min(sunWidth, sunHeight) / 2;
+	var sunWidth = w,
+	    sunHeight = 404,
+	    radius = Math.min(sunWidth, sunHeight) / 2;
 
-var x = d3.scale.linear()
-    .range([0, 2 * Math.PI]);
+	var x = d3.scale.linear()
+	    .range([0, 2 * Math.PI]);
 
-var y = d3.scale.sqrt()
-    .range([0, radius]);
+	var y = d3.scale.sqrt()
+	    .range([0, radius]);
 
-var color = d3.scale.category20c();
+	var color = d3.scale.category20c();
 
-var svg = d3.select("#navSunBurst").append("svg")
-    .attr("width", sunWidth)
-    .attr("height", sunHeight + 10)
-  .append("g")
-    .attr("transform", "translate(" + sunWidth / 2 + "," + (sunHeight / 2 + 10) + ")");
+	var svg = d3.select("#navSunBurst").append("svg")
+	    .attr("width", sunWidth)
+	    .attr("height", sunHeight + 10 + da)
+	  .append("g")
+	    .attr("transform", "translate(" + sunWidth / 2 + "," + (sunHeight / 2 + 10) + ")");
 
-var partition = d3.layout.partition()
-    .value(function(d) { return d.size; });
+	var partition = d3.layout.partition()
+	    .value(function(d) { return d.size; });
 
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
-    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
-    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+	var arc = d3.svg.arc()
+	    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+	    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+	    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+	    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
-  var path = svg.selectAll("path")
-      .data(partition.nodes(root))
-    .enter().append("path")
-      .attr("d", arc)
-	  .attr("stroke", "black")
-	  .style("opacity", function(d) {
-		  if(d.depth > 1){
-		  	return 1/(d.depth-1);
-		  }
-		  else {
-		  	return 1;
-		  }
-	  })
-	  .style("fill", function(d) {
-	  if(d.color != null){
-		  return d.color;
-		  } else if(d.parent != null) {
-			  return d.parent.color ? d.parent.color: d.parent.parent.color;
-			  } else {
-			  return color((d.children ? d : d.parent).name);
+	  var path = svg.selectAll("path")
+	      .data(partition.nodes(root))
+	    .enter().append("path")
+	      .attr("d", arc)
+		  .attr("stroke", "black")
+		  .style("opacity", function(d) {
+			  if(d.depth > 1){
+			  	return 1/(d.depth-1);
 			  }
-	  })
-      .on("click", click)
-	  .on("mouseenter", function(d) {
-		  d3.select(this).style("fill", "darkGray");
+			  else {
+			  	return 1;
+			  }
 		  })
-	  .on("mouseover", function(d) {
-		  d3.select("#skillFocus").html(function() {
-				  return "<div style='margin-top: 80px'><span><img height='150' src='images/default-hex.png' alt='Nathaniel' /></span><br><h6 class='well'>" + d.name + "</h6></div>" ;
-				});
-			})
-			// <
-	  .on("mouseleave", function(d) {
-		  d3.select(this)
 		  .style("fill", function(d) {
 		  if(d.color != null){
 			  return d.color;
@@ -535,78 +515,106 @@ var arc = d3.svg.arc()
 				  } else {
 				  return color((d.children ? d : d.parent).name);
 				  }
-		  	  })
 		  })
-	  ;
+	      .on("click", click)
+		  .on("mouseenter", function(d) {
+			  d3.select(this).style("fill", "darkGray");
+			  })
+		  .on("mouseover", function(d) {
+			  d3.select("#skillFocus").html(function() {
+					  return "<div style='margin-top: 80px'><span><img height='150' src='images/default-hex.png' alt='Nathaniel' /></span><br><h6 class='well'>" + d.name + "</h6></div>" ;
+					});
+				})
+				// <
+		  .on("mouseleave", function(d) {
+			  d3.select(this)
+			  .style("fill", function(d) {
+			  if(d.color != null){
+				  return d.color;
+				  } else if(d.parent != null) {
+					  return d.parent.color ? d.parent.color: d.parent.parent.color;
+					  } else {
+					  return color((d.children ? d : d.parent).name);
+					  }
+			  	  })
+			  })
+		  ;
 
-  function click(d) {
-    path.transition()
-      .duration(750)
-      .attrTween("d", arcTween(d));
-	  d3.selectAll(".centerText")
-	  .transition().duration(400)
-	  .style("opacity", 0)
-	  .style("font-size", "0px");
-	  if(d.name == "Multifaceted Specialist"){
-	  	d3.selectAll(".centerText")
-		.style("display", "")
-		.transition().duration(400)
-		.style("opacity", 1)
-		.style("font-size", "13px");
+	  function click(d) {
+	    path.transition()
+	      .duration(750)
+	      .attrTween("d", arcTween(d));
+		  d3.selectAll(".centerText")
+		  .transition().duration(400)
+		  .style("opacity", 0)
+		  .style("font-size", "0px");
+		  if(d.name == "Multifaceted Specialist"){
+		  	d3.selectAll(".centerText")
+			.style("display", "")
+			.transition().duration(400)
+			.style("opacity", 1)
+			.style("font-size", "13px");
+		  }
 	  }
-  }
 
 
-d3.select(self.frameElement).style("height", sunHeight + "px");
+	d3.select(self.frameElement).style("height", sunHeight + "px");
 
-// Interpolate the scales!
-function arcTween(d) {
-  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-      yd = d3.interpolate(y.domain(), [d.y, 1]),
-      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-  return function(d, i) {
-    return i
-        ? function(t) { return arc(d); }
-        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
-  };
+	// Interpolate the scales!
+	function arcTween(d) {
+	  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+	      yd = d3.interpolate(y.domain(), [d.y, 1]),
+	      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+	  return function(d, i) {
+	    return i
+	        ? function(t) { return arc(d); }
+	        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
+	  };
+	}
+
+	svg.append("text")
+			.attr("class", "centerText")
+	        .attr("x", (width / width))
+	        .attr("y", -10 - (margin.top / margin.top))
+	        .attr("text-anchor", "middle")
+	        .style("font-size", "13px")
+	        .text("Roles and Skills");
+
+	svg.append("text")
+			.attr("class", "centerText")
+	        .attr("x", (width / width))
+	        .attr("y", 10 - (margin.top / margin.top))
+	        .attr("text-anchor", "middle")
+	        .style("font-size", "13px")
+	        .text("Distributed by");
+
+	svg.append("text")
+			.attr("class", "centerText")
+	        .attr("x", (width / width))
+	        .attr("y", 30 - (margin.top / margin.top))
+	        .attr("text-anchor", "middle")
+	        .style("font-size", "13px")
+	        .text("Subject Area");
+
+	svg.append("text")
+			.attr("class", "centerText")
+	        .attr("x", 0)
+	        .attr("y", 170 + da - (margin.top / margin.top))
+	        .attr("text-anchor", "middle")
+	        .style("font-size", "13px")
+	        .text("I've explored a few subjects.");
+
+	svg.append("text")
+			.attr("class", "centerText")
+	        .attr("x", 0)
+	        .attr("y", 190 + da - (margin.top / margin.top))
+	        .attr("text-anchor", "middle")
+	        .style("font-size", "13px")
+	        .text("(Click an area to zoom)");
 }
 
-svg.append("text")
-		.attr("class", "centerText")
-        .attr("x", (width / width))
-        .attr("y", -10 - (margin.top / margin.top))
-        .attr("text-anchor", "middle")
-        .style("font-size", "13px")
-        .text("Roles and Skills");
-
-svg.append("text")
-		.attr("class", "centerText")
-        .attr("x", (width / width))
-        .attr("y", 10 - (margin.top / margin.top))
-        .attr("text-anchor", "middle")
-        .style("font-size", "13px")
-        .text("Distributed by");
-
-svg.append("text")
-		.attr("class", "centerText")
-        .attr("x", (width / width))
-        .attr("y", 30 - (margin.top / margin.top))
-        .attr("text-anchor", "middle")
-        .style("font-size", "13px")
-        .text("Subject Area");
-
-svg.append("text")
-		.attr("class", "centerText")
-        .attr("x", -(width / 3))
-        .attr("y", 150 - (margin.top / margin.top))
-        .attr("text-anchor", "middle")
-        .style("font-size", "13px")
-        .text("I've explored a few subjects.");
-
-svg.append("text")
-		.attr("class", "centerText")
-        .attr("x", -(width / 3))
-        .attr("y", 170 - (margin.top / margin.top))
-        .attr("text-anchor", "middle")
-        .style("font-size", "13px")
-        .text("(Click an area to zoom)");
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	drawSunGraph(270, 0, true)
+} else {
+	drawSunGraph(780, 40, false)
+}
