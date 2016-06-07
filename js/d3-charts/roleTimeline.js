@@ -72,12 +72,12 @@ function drawGraph(w, abm, mobile) {
 			.scale(x)
 			.orient("bottom")
 			.ticks(currentYear - earlyYear)
-			.tickFormat(function(d) { return ("'" + d.toString().substring(2,4)); })
+			.tickFormat(function(d) { return (d); })
 
-	var xAxis = d3.svg.axis()
+	var xAxisMobile = d3.svg.axis()
 	    .scale(x)
 	    .orient("bottom")
-			.ticks(currentYear - earlyYear)
+			.ticks((currentYear - earlyYear)/2)
 			.tickFormat(function(d) { return ("'" + d.toString().substring(2,4)); })
 
 	var yAxis = d3.svg.axis()
@@ -93,11 +93,6 @@ function drawGraph(w, abm, mobile) {
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-	  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
 	  svg.append("text")
         .attr("x", (width / 2))
         .attr("y", 0 - (margin.top / 2))
@@ -109,7 +104,12 @@ function drawGraph(w, abm, mobile) {
 			svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
-	      .call(xAxis)
+	      .call(xAxisMobile);
+
+			svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxisMobile)
 			.selectAll("text")
 				.attr("y", 8)
 				.attr("x", -8)
@@ -119,12 +119,17 @@ function drawGraph(w, abm, mobile) {
 
 			svg.append("text")
 				.attr("y", -10)
-				.attr("x", 25)
+				.attr("x", -10)
 				.attr("dx", ".00em")
 				.style("text-anchor", "")
 				.style("font-size", "10px")
-				.html("(Click over bar to see role info)");
+				.html("(Click over bar to see role info, then scroll up.)");
 		} else {
+			svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis);
+
 			svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
