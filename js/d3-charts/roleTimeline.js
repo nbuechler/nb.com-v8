@@ -78,7 +78,12 @@ function drawGraph(w, abm, mobile) {
 	    .scale(x)
 	    .orient("bottom")
 			.ticks((currentYear - earlyYear)/2)
-			.tickFormat(function(d) { return ("'" + d.toString().substring(2,4)); })
+			.tickFormat(function(d) {
+				if(d % 10 == 0){
+					return (d);
+				}
+				return ("'" + d.toString().substring(2,4));
+			})
 
 	var yAxis = d3.svg.axis()
 	    .scale(y)
