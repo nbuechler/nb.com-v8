@@ -36,7 +36,12 @@
 </head>
 
 <body ng-app="nbApp">
-	<div id="content">
+	<div id="loadingContent" style="text-align: center;">
+
+		Focusing inspirational lens apparatus...
+
+	</div>
+	<div id="content" style="display: none;">
 
 		<!-- NAVIGATION -->
 		<div class="navbar navbar-default navbar-fixed-top scrollBarHack" role="navigation">
@@ -86,7 +91,6 @@
 		</div>
 
 	</div>
-
 </body>
 
 	<!-- Google Analytics -->
@@ -192,6 +196,15 @@
 	  )
 	  document.querySelector('head').appendChild(msViewportStyle)
 	}
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function () {
+			setTimeout(function () {
+				$('#loadingContent').hide();
+				$('#content').show();
+			}, 1500);
+		});
 	</script>
 
 </html>
