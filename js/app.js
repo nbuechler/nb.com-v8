@@ -26,6 +26,13 @@ nbApp.config(function($stateProvider, $urlRouterProvider, $sceProvider) {
             }
         })
 
+        .state('ux-response', {
+            url: '/ux-response',
+            views: {
+                '': { templateUrl: '../views/ux-response.html' }
+            }
+        })
+
         /*
         Artist Section
         */
