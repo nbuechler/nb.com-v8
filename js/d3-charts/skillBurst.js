@@ -252,7 +252,7 @@ var root = {
 						{"name": "MySQL", "size": 1},
 						{"name": "Oracle", "size": 1},
 						{"name": "Mongo DB", "size": 1},
-						{"name": "Neo4j", "size": 1}
+						{"name": "Neo4j", "size": 1},
 						{"name": "HQL", "size": 1},
 						{"name": "SQL", "size": 1},
 						{"name": "Cypher", "size": 1},
