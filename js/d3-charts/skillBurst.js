@@ -206,6 +206,7 @@ var root = {
 						{"name": "Flask", "size": 1},
 						{"name": "Tornado", "size": 1},
 						{"name": "Django", "size": 1},
+						{"name": "NLTK", "size": 1},
 						{"name": "pip", "size": 1},
 					]
 					},
@@ -247,13 +248,15 @@ var root = {
 					"size": 1,
 					"children": [
 						{"name": "Databases", "size": 1},
+						{"name": "PostgresSQL", "size": 1},
 						{"name": "MySQL", "size": 1},
 						{"name": "Oracle", "size": 1},
-						{"name": "HQL", "size": 1},
-						{"name": "SQL", "size": 1},
-						{"name": "Hibernate", "size": 1},
 						{"name": "Mongo DB", "size": 1},
 						{"name": "Neo4j", "size": 1}
+						{"name": "HQL", "size": 1},
+						{"name": "SQL", "size": 1},
+						{"name": "Cypher", "size": 1},
+						{"name": "Hibernate", "size": 1},
 					]
 				},
 					{
