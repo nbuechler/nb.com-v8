@@ -1,6 +1,6 @@
 {
   "name": "nb.com",
-  "version": "8.12.4",
+  "version": "8.13.0",
   "description": "nathanielbuechler.com website",
   "dependencies": {
     "bootstrap": "~3",
