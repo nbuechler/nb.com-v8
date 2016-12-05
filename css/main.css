@@ -331,3 +331,9 @@ p{
   fill: #726E7D;
   stroke: none;
 }
+
+.badge {
+  color: #222;
+  border: solid 1px #fff;
+  margin: 5px;
+}

@@ -3,11 +3,27 @@ nbApp.controller('computerProgrammerController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
-        {"name": "javascript-density-scope", "description": "A simple JavaScript application engineered to measure frequency of words in a text body.",
-        "bkgd": "programmingBKGD", "color": "info", "link": "javascript-density-scope"},
+        "javascript-density-scope"
       ];
 
-      $scope.projects = allProjects;
+      $scope.projects = []
+
+      /*
+       * Use this to get the most up-to-date repos:
+       * $http.get('https://api.github.com/users/nbuechler/repos')
+       */
+      $http.get('js/json/repos.json')
+      .success(function(response) {
+        // console.log(response);
+        for (var i = 0; i < response.length; i++) {
+          if (response[i].fork != true && allProjects.indexOf(response[i].name) !== -1) {
+            response[i].bkgd = 'programmingBKGD';
+            response[i].color = 'info';
+            $scope.projects.push(response[i]);
+          }
+        }
+        $scope.loading = 0;
+      });
 
       $scope.selectProject = function(project) {
           $scope.selectProject = project;
