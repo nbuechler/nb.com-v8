@@ -2,7 +2,16 @@
 nbApp.controller('backEndDeveloperController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
-      var allProjects = ["basic-poll", "ideo-quest"];
+      var allProjects = [
+        "basic-poll",
+        "copious-affect-corpus",
+        "energetic-etl",
+        "hungry-interceptor",
+        "microblog-tut",
+        "ideo-quest",
+        "serpentine-learner",
+        "speedy-affect-scorer",
+      ];
 
       $scope.projects = []
 

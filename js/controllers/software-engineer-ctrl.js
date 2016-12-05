@@ -3,19 +3,35 @@ nbApp.controller('softwareEngineerController', ['$scope', '$http',
     function($scope, $http) {
       // {"name": "", "description": "", "bkgd": "", "color": "", "link": ""},
       var allProjects = [
-        {"name": "hungry-interceptor", "description": "Intercepts data, does something with it, stores it",
-        "bkgd": "engineeringBKGD", "color": "warning", "link": "hungry-interceptor"},
-        {"name": "fixed-gateway", "description": "a gatway for all the front-end apps ",
-        "bkgd": "engineeringBKGD", "color": "warning", "link": "fixed-gateway"},
-        {"name": "friendly-finder", "description": "finds friends and other friendly fun ideas",
-        "bkgd": "engineeringBKGD", "color": "warning", "link": "friendly-finder"},
-        {"name": "log-grower", "description": "grows logs - based on mean stack boilerplate",
-        "bkgd": "engineeringBKGD", "color": "warning", "link": "log-grower"},
-        {"name": "studious-display", "description": "Displaying studious information and analytics",
-        "bkgd": "engineeringBKGD", "color": "warning", "link": "studious-display"},
+        "ample-affect-exhibit",
+        "copious-affect-corpus",
+        "energetic-etl",
+        "fixed-gateway",
+        "friendly-finder",
+        "hungry-interceptor",
+        "log-grower",
+        "speedy-affect-scorer",
+        "studious-display",
       ];
 
-      $scope.projects = allProjects;
+      $scope.projects = []
+
+      /*
+       * Use this to get the most up-to-date repos:
+       * $http.get('https://api.github.com/users/nbuechler/repos')
+       */
+      $http.get('js/json/repos.json')
+      .success(function(response) {
+        // console.log(response);
+        for (var i = 0; i < response.length; i++) {
+          if (response[i].fork != true && allProjects.indexOf(response[i].name) !== -1) {
+            response[i].bkgd = 'engineeringBKGD';
+            response[i].color = 'warning';
+            $scope.projects.push(response[i]);
+          }
+        }
+        $scope.loading = 0;
+      });
 
       $scope.selectProject = function(project) {
           $scope.selectProject = project;
