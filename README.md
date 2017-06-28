@@ -41,7 +41,6 @@ Includes the following:
 * Pictures
 * Articles
 * Data Visualizations
-* Etc.
 
 # Lessons Learned
 * Using a web framework eliminated some problems in creating repetitive code block. In version 8, I used angular.js (version 1) but I still haven't solved the problem of creating content in an easier way. Maybe I need to build a piece of software one day to fulfill the repetitive task of collecting and displaying information about everything someone does. 
